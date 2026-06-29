@@ -1,0 +1,15 @@
+/workspace/install/acre_ctrl/share/ament_index/resource_index/package_run_dependencies/acre_ctrl
+/workspace/install/acre_ctrl/share/ament_index/resource_index/parent_prefix_path/acre_ctrl
+/workspace/install/acre_ctrl/share/acre_ctrl/environment/ament_prefix_path.sh
+/workspace/install/acre_ctrl/share/acre_ctrl/environment/ament_prefix_path.dsv
+/workspace/install/acre_ctrl/share/acre_ctrl/environment/path.sh
+/workspace/install/acre_ctrl/share/acre_ctrl/environment/path.dsv
+/workspace/install/acre_ctrl/share/acre_ctrl/local_setup.bash
+/workspace/install/acre_ctrl/share/acre_ctrl/local_setup.sh
+/workspace/install/acre_ctrl/share/acre_ctrl/local_setup.zsh
+/workspace/install/acre_ctrl/share/acre_ctrl/local_setup.dsv
+/workspace/install/acre_ctrl/share/acre_ctrl/package.dsv
+/workspace/install/acre_ctrl/share/ament_index/resource_index/packages/acre_ctrl
+/workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrlConfig.cmake
+/workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrlConfig-version.cmake
+/workspace/install/acre_ctrl/share/acre_ctrl/package.xml
