@@ -1,5 +1,3 @@
-ARG CUDA=true
-
 FROM osrf/ros:humble-desktop
 
 # Install development essentials
