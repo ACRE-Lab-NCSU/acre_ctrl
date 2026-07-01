@@ -1,8 +1,0 @@
-setup.py
-acre_ctrl/__init__.py
-acre_ctrl.egg-info/PKG-INFO
-acre_ctrl.egg-info/SOURCES.txt
-acre_ctrl.egg-info/dependency_links.txt
-acre_ctrl.egg-info/top_level.txt
-acre_ctrl/srv/__init__.py
-acre_ctrl/srv/_go2_start_sequence.py
