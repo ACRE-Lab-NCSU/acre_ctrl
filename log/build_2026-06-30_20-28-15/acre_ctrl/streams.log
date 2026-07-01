@@ -1,0 +1,74 @@
+[0.023s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[0.132s] [  5%] Built target acre_ctrl__rs
+[0.133s] [  5%] Built target acre_ctrl__cpp
+[0.133s] [ 12%] Built target acre_ctrl__rosidl_generator_c
+[0.152s] [ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[0.175s] [ 20%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[0.175s] [ 30%] Built target acre_ctrl__rosidl_typesupport_cpp
+[0.176s] [ 35%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[0.197s] [ 42%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[0.197s] [ 50%] Built target acre_ctrl__rosidl_typesupport_c
+[0.197s] [ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[0.239s] [ 57%] Built target acre_ctrl
+[0.280s] [ 60%] Built target acre_ctrl__py
+[0.283s] [ 65%] Built target spin_sample
+[0.295s] [ 67%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[0.296s] [ 75%] Built target point_control_node
+[0.327s] [ 80%] Built target acre_ctrl__rosidl_generator_py
+[0.372s] [ 95%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[0.372s] [ 95%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[0.372s] [ 95%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[0.521s] running egg_info
+[0.523s] writing acre_ctrl.egg-info/PKG-INFO
+[0.523s] writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+[0.523s] writing top-level names to acre_ctrl.egg-info/top_level.txt
+[0.526s] reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.527s] writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.572s] [ 95%] Built target ament_cmake_python_build_acre_ctrl_egg
+[3.799s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:[m[K In member function ‘[01m[Kvoid Go2SportClientNode::start_sequence(std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Request_<std::allocator<void> > >, std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Response_<std::allocator<void> > >)[m[K’:
+[3.799s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:85:33:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.799s]    85 |         sport_client_.Move(req, [01;31m[K0f[m[K, 0f, 0.5f);
+[3.799s]       |                                 [01;31m[K^~[m[K
+[3.799s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:85:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.799s]    85 |         sport_client_.Move(req, 0f, [01;31m[K0f[m[K, 0.5f);
+[3.799s]       |                                     [01;31m[K^~[m[K
+[3.799s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:86:33:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.799s]    86 |         sport_client_.Move(req, [01;31m[K0f[m[K, 0f, 0.5f);
+[3.800s]       |                                 [01;31m[K^~[m[K
+[3.800s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:86:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.800s]    86 |         sport_client_.Move(req, 0f, [01;31m[K0f[m[K, 0.5f);
+[3.800s]       |                                     [01;31m[K^~[m[K
+[3.800s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:87:33:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.800s]    87 |         sport_client_.Move(req, [01;31m[K0f[m[K, 0f, 0.5f);
+[3.800s]       |                                 [01;31m[K^~[m[K
+[3.800s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:87:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.800s]    87 |         sport_client_.Move(req, 0f, [01;31m[K0f[m[K, 0.5f);
+[3.800s]       |                                     [01;31m[K^~[m[K
+[3.800s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:88:33:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.801s]    88 |         sport_client_.Move(req, [01;31m[K0f[m[K, 0f, 0.5f);
+[3.801s]       |                                 [01;31m[K^~[m[K
+[3.801s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:88:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.801s]    88 |         sport_client_.Move(req, 0f, [01;31m[K0f[m[K, 0.5f);
+[3.801s]       |                                     [01;31m[K^~[m[K
+[3.801s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:89:33:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.801s]    89 |         sport_client_.Move(req, [01;31m[K0f[m[K, 0f, 0.5f);
+[3.801s]       |                                 [01;31m[K^~[m[K
+[3.801s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:89:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.801s]    89 |         sport_client_.Move(req, 0f, [01;31m[K0f[m[K, 0.5f);
+[3.801s]       |                                     [01;31m[K^~[m[K
+[3.801s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:90:33:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.801s]    90 |         sport_client_.Move(req, [01;31m[K0f[m[K, 0f, 0.5f);
+[3.801s]       |                                 [01;31m[K^~[m[K
+[3.802s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:90:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.802s]    90 |         sport_client_.Move(req, 0f, [01;31m[K0f[m[K, 0.5f);
+[3.802s]       |                                     [01;31m[K^~[m[K
+[3.802s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:91:33:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.802s]    91 |         sport_client_.Move(req, [01;31m[K0f[m[K, 0f, 0.5f);
+[3.802s]       |                                 [01;31m[K^~[m[K
+[3.802s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:91:37:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""f[m[K’
+[3.802s]    91 |         sport_client_.Move(req, 0f, [01;31m[K0f[m[K, 0.5f);
+[3.802s]       |                                     [01;31m[K^~[m[K
+[7.079s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+[7.079s] gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+[7.080s] gmake: *** [Makefile:146: all] Error 2
+[7.082s] Invoked command in '/workspace/build/acre_ctrl' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16

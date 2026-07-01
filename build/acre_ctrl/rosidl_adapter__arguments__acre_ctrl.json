@@ -1,0 +1,6 @@
+{
+  "package_name": "acre_ctrl",
+  "non_idl_tuples": [
+    "/workspace/src/acre_ctrl:srv/Go2StartSequence.srv"
+  ]
+}

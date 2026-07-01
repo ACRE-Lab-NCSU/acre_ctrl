@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     curl \
     gpg \
+    python3-dev \
     python3-colcon-common-extensions \
     cmake \
     build-essential \
@@ -13,6 +14,7 @@ RUN apt-get update && apt-get install -y \
     ros-humble-rmw-cyclonedds-cpp \
     ros-humble-rosidl-generator-dds-idl \
     libyaml-cpp-dev \
+    nlohmann-json3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone and build Unitree CycloneDDS packages
@@ -33,3 +35,4 @@ WORKDIR /workspace
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["bash"]
+# /ros_ws/src

@@ -1,0 +1,38 @@
+[  2%] Built target acre_ctrl__rs
+[ 10%] Built target acre_ctrl__cpp
+[ 12%] Built target acre_ctrl__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[ 27%] Built target acre_ctrl__rosidl_typesupport_c
+[ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[ 35%] Built target acre_ctrl__rosidl_typesupport_cpp
+[ 50%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[ 50%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target acre_ctrl
+[ 62%] Built target acre_ctrl__py
+[ 65%] Built target spin_sample
+[ 72%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[ 75%] Built target point_control_node
+[ 80%] Built target acre_ctrl__rosidl_generator_py
+[ 95%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[ 95%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing acre_ctrl.egg-info/PKG-INFO
+writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+writing top-level names to acre_ctrl.egg-info/top_level.txt
+reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_acre_ctrl_egg
+[01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:[m[K In member function ‘[01m[Kvoid Go2SportClientNode::start_sequence(std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Request_<std::allocator<void> > >, std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:74:34:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSportClient::ClassicWalk(unitree_api::msg::Request&)[m[K’
+   74 |         [01;31m[Ksport_client_.ClassicWalk(req)[m[K;       // balanced standing -> Agile
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:10[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:303:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid SportClient::ClassicWalk(unitree_api::msg::Request&, bool)[m[K’
+  303 |   void [01;36m[KClassicWalk[m[K(unitree_api::msg::Request &req, bool flag);
+      |        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:303:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

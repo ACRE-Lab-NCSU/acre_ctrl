@@ -1,9 +1,12 @@
 #pragma once
 #include "algorithm_base.hpp"
+#include <pybind11/embed.h>
 #include <dlfcn.h>
 #include <stdexcept>
 #include <functional>
 #include <string>
+
+namespace py = pybind11;
 
 class AlgorithmRunner {
 public:
@@ -57,6 +60,17 @@ private:
     }
 
     void load_python(const std::string& path) {
-        // !TODO
+        /**
+        py::scoped_interpreter guard{}; // Start the Python Interprtor
+        py::module_ sys = py::module_::import("sys");
+        py::modeule_ algo = py::module_::import(path); // import the algorithm file at the given path
+        instance_ = algo.attr("init"); // Initlize the instance 
+        input_type_ = static_cast<AlgorithmInputType>(algo.attr("type"));
+        compute_fn_ = [compute](void* p, const void* in) {
+            return algo.attr("compute")(p, in);
+        };
+        */
+
+
     }
 };

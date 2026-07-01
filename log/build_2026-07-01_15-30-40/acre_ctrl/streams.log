@@ -1,0 +1,49 @@
+[0.017s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[0.095s] [  2%] Built target acre_ctrl__cpp
+[0.095s] [ 12%] Built target acre_ctrl__rs
+[0.095s] [ 12%] Built target acre_ctrl__rosidl_generator_c
+[0.109s] [ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[0.125s] [ 27%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[0.126s] [ 27%] Built target acre_ctrl__rosidl_typesupport_cpp
+[0.126s] [ 35%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[0.139s] [ 57%] Built target acre_ctrl__rosidl_typesupport_c
+[0.139s] [ 55%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[0.139s] [ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[0.166s] [ 57%] Built target acre_ctrl
+[0.190s] [ 60%] Built target acre_ctrl__py
+[0.191s] [ 65%] Built target spin_sample
+[0.196s] [ 70%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[0.196s] [ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o[0m
+[0.217s] [ 75%] Built target acre_ctrl__rosidl_generator_py
+[0.242s] [ 90%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[0.242s] [ 90%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[0.243s] [ 90%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[0.307s] running egg_info
+[0.307s] writing acre_ctrl.egg-info/PKG-INFO
+[0.307s] writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+[0.307s] writing top-level names to acre_ctrl.egg-info/top_level.txt
+[0.309s] reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.309s] writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.340s] [ 90%] Built target ament_cmake_python_build_acre_ctrl_egg
+[0.533s] In file included from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:2[m[K,
+[0.534s]                  from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[0.534s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:79:83:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+[0.534s]    79 | #define REGISTER_ALGORITHM(ClassName, InputType)                                  \
+[0.534s]       |                                                                                    
+[2.888s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:[m[K In member function ‘[01m[Kvoid Go2SportClientNode::stop_sequence()[m[K’:
+[2.888s] [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:99:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq_[m[K’ was not declared in this scope; did you mean ‘[01m[Kreq[m[K’?
+[2.888s]    99 |         sport_client_.SwitchJoystick([01;31m[Kreq_[m[K, true);
+[2.888s]       |                                      [01;31m[K^~~~[m[K
+[2.888s]       |                                      [32m[Kreq[m[K
+[2.893s] In file included from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[2.893s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:[m[K In member function ‘[01m[Kvoid AlgorithmRunner::load_python(const string&)[m[K’:
+[2.893s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:62:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.893s]    62 |     void load_python([01;35m[Kconst std::string& path[m[K) {
+[2.893s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[6.526s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+[6.526s] gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+[6.526s] gmake[1]: *** Waiting for unfinished jobs....
+[11.600s] [ 92%] [32m[1mLinking CXX executable point_control_node[0m
+[12.286s] [ 95%] Built target point_control_node
+[12.287s] gmake: *** [Makefile:146: all] Error 2
+[12.289s] Invoked command in '/workspace/build/acre_ctrl' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16

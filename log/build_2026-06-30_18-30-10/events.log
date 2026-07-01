@@ -1,0 +1,301 @@
+[0.000000] (-) TimerEvent: {}
+[0.000349] (acre_ctrl) JobQueued: {'identifier': 'acre_ctrl', 'dependencies': OrderedDict()}
+[0.000522] (acre_ctrl) JobStarted: {'identifier': 'acre_ctrl'}
+[0.011737] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'cmake'}
+[0.012614] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'build'}
+[0.013313] (acre_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/acre_ctrl', '--', '-j16', '-l16'], 'cwd': '/workspace/build/acre_ctrl', 'env': OrderedDict([('HOSTNAME', 'fedora'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="enp1s0f0"/></Interfaces></General></Domain></CycloneDDS>'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/workspace/build/acre_ctrl'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[0.063118] (acre_ctrl) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099504] (-) TimerEvent: {}
+[0.199813] (-) TimerEvent: {}
+[0.218039] (acre_ctrl) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.250096] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.253052] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.260852] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.272116] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.286475] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299883] (-) TimerEvent: {}
+[0.323508] (acre_ctrl) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.325192] (acre_ctrl) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.345681] (acre_ctrl) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.389645] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.399055] (acre_ctrl) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.399959] (-) TimerEvent: {}
+[0.408145] (acre_ctrl) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.420909] (acre_ctrl) StdoutLine: {'line': b'-- Found unitree_go: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)\n'}
+[0.429744] (acre_ctrl) StdoutLine: {'line': b'-- Found unitree_api: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)\n'}
+[0.500092] (-) TimerEvent: {}
+[0.567518] (acre_ctrl) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Development Interpreter Development.Module Development.Embed \n'}
+[0.569838] (acre_ctrl) StdoutLine: {'line': b'-- Found pybind11: /usr/include (found version "2.9.1")\n'}
+[0.600214] (-) TimerEvent: {}
+[0.615987] (acre_ctrl) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700310] (-) TimerEvent: {}
+[0.754421] (acre_ctrl) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.800422] (-) TimerEvent: {}
+[0.900773] (-) TimerEvent: {}
+[0.999696] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.000832] (-) TimerEvent: {}
+[1.093915] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.100910] (-) TimerEvent: {}
+[1.121136] (acre_ctrl) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.140018] (acre_ctrl) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.140253] (acre_ctrl) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.140394] (acre_ctrl) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.195878] (acre_ctrl) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[1.196141] (acre_ctrl) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[1.196283] (acre_ctrl) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[1.196413] (acre_ctrl) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.196520] (acre_ctrl) StderrLine: {'line': b'  CMakeLists.txt:42 (rosidl_target_interfaces)\n'}
+[1.196617] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.196723] (acre_ctrl) StderrLine: {'line': b'\x1b[0m\n'}
+[1.197141] (acre_ctrl) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[1.197197] (acre_ctrl) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[1.197246] (acre_ctrl) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[1.197294] (acre_ctrl) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.197340] (acre_ctrl) StderrLine: {'line': b'  CMakeLists.txt:50 (rosidl_target_interfaces)\n'}
+[1.197394] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.197447] (acre_ctrl) StderrLine: {'line': b'\x1b[0m\n'}
+[1.198424] (acre_ctrl) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[1.198504] (acre_ctrl) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[1.198554] (acre_ctrl) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[1.198601] (acre_ctrl) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.198647] (acre_ctrl) StderrLine: {'line': b'  CMakeLists.txt:61 (rosidl_target_interfaces)\n'}
+[1.198693] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.198790] (acre_ctrl) StderrLine: {'line': b'\x1b[0m\n'}
+[1.198839] (acre_ctrl) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.200973] (-) TimerEvent: {}
+[1.209227] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.209831] (acre_ctrl) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /workspace/src/acre_ctrl/include/acre_ctrl\n'}
+[1.209939] (acre_ctrl) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.210614] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.212258] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.212323] (acre_ctrl) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.212618] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.214072] (acre_ctrl) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.259208] (acre_ctrl) StdoutLine: {'line': b'-- Generating done\n'}
+[1.274056] (acre_ctrl) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/acre_ctrl\n'}
+[1.301105] (-) TimerEvent: {}
+[1.307128] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_c\x1b[0m\n'}
+[1.316695] (acre_ctrl) StdoutLine: {'line': b'[  5%] Built target acre_ctrl__rs\n'}
+[1.316956] (acre_ctrl) StdoutLine: {'line': b'[  5%] Built target acre_ctrl__cpp\n'}
+[1.318423] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target acre_ctrl__rosidl_generator_c\n'}
+[1.326607] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_acre_ctrl\n'}
+[1.327006] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.327188] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.328003] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.328612] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.328781] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.328894] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c\x1b[0m\n'}
+[1.341106] (acre_ctrl) StdoutLine: {'line': b'[ 20%] Built target acre_ctrl__rosidl_typesupport_c\n'}
+[1.341404] (acre_ctrl) StdoutLine: {'line': b'[ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c\n'}
+[1.344131] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_cpp\n'}
+[1.344314] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp\n'}
+[1.344396] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp\n'}
+[1.344787] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c\n'}
+[1.368508] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl\n'}
+[1.380333] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target spin_sample\x1b[0m\n'}
+[1.380723] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target point_control_node\x1b[0m\n'}
+[1.381450] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sportmode_driver\x1b[0m\n'}
+[1.391672] (acre_ctrl) StdoutLine: {'line': b'[ 60%] Built target acre_ctrl__py\n'}
+[1.393830] (acre_ctrl) StdoutLine: {'line': b'[ 65%] Built target spin_sample\n'}
+[1.401203] (-) TimerEvent: {}
+[1.402724] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_py\x1b[0m\n'}
+[1.404838] (acre_ctrl) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o\x1b[0m\n'}
+[1.409167] (acre_ctrl) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o\x1b[0m\n'}
+[1.416856] (acre_ctrl) StdoutLine: {'line': b'[ 77%] Built target sportmode_driver\n'}
+[1.418411] (acre_ctrl) StdoutLine: {'line': b'[ 82%] Built target acre_ctrl__rosidl_generator_py\n'}
+[1.430474] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.430682] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.430751] (acre_ctrl) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.447235] (acre_ctrl) StdoutLine: {'line': b'[ 97%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.447494] (acre_ctrl) StdoutLine: {'line': b'[ 97%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext\n'}
+[1.447613] (acre_ctrl) StdoutLine: {'line': b'[ 97%] Built target acre_ctrl__rosidl_typesupport_c__pyext\n'}
+[1.501306] (-) TimerEvent: {}
+[1.509210] (acre_ctrl) StdoutLine: {'line': b'running egg_info\n'}
+[1.509795] (acre_ctrl) StdoutLine: {'line': b'writing acre_ctrl.egg-info/PKG-INFO\n'}
+[1.509980] (acre_ctrl) StdoutLine: {'line': b'writing dependency_links to acre_ctrl.egg-info/dependency_links.txt\n'}
+[1.510163] (acre_ctrl) StdoutLine: {'line': b'writing top-level names to acre_ctrl.egg-info/top_level.txt\n'}
+[1.511757] (acre_ctrl) StdoutLine: {'line': b"reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[1.512247] (acre_ctrl) StdoutLine: {'line': b"writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[1.540816] (acre_ctrl) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_acre_ctrl_egg\n'}
+[1.601429] (-) TimerEvent: {}
+[1.701758] (-) TimerEvent: {}
+[1.729486] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:2\x1b[m\x1b[K,\n'}
+[1.729726] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8\x1b[m\x1b[K:\n'}
+[1.729836] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:79:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kbackslash-newline at end of file\n'}
+[1.729948] (acre_ctrl) StderrLine: {'line': b'   79 | #define REGISTER_ALGORITHM(ClassName, InputType)                                  \\\n'}
+[1.730059] (acre_ctrl) StderrLine: {'line': b'      |                                                                                    \n'}
+[1.801868] (-) TimerEvent: {}
+[1.902260] (-) TimerEvent: {}
+[2.002689] (-) TimerEvent: {}
+[2.103170] (-) TimerEvent: {}
+[2.203573] (-) TimerEvent: {}
+[2.303941] (-) TimerEvent: {}
+[2.404326] (-) TimerEvent: {}
+[2.504767] (-) TimerEvent: {}
+[2.605154] (-) TimerEvent: {}
+[2.705568] (-) TimerEvent: {}
+[2.805945] (-) TimerEvent: {}
+[2.906301] (-) TimerEvent: {}
+[3.006670] (-) TimerEvent: {}
+[3.107047] (-) TimerEvent: {}
+[3.207443] (-) TimerEvent: {}
+[3.307837] (-) TimerEvent: {}
+[3.408227] (-) TimerEvent: {}
+[3.508620] (-) TimerEvent: {}
+[3.609006] (-) TimerEvent: {}
+[3.709387] (-) TimerEvent: {}
+[3.809832] (-) TimerEvent: {}
+[3.910219] (-) TimerEvent: {}
+[4.010627] (-) TimerEvent: {}
+[4.033104] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8\x1b[m\x1b[K:\n'}
+[4.033319] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AlgorithmRunner::load_python(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.033386] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:65:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmodeule_\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpy\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmodule_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.033444] (acre_ctrl) StderrLine: {'line': b'   65 |         py::\x1b[01;31m\x1b[Kmodeule_\x1b[m\x1b[K algo = py::module_::import(path); // import the algorithm file at the given path\n'}
+[4.033494] (acre_ctrl) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.033541] (acre_ctrl) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kmodule_\x1b[m\x1b[K\n'}
+[4.040041] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:66:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalgo\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.040264] (acre_ctrl) StderrLine: {'line': b'   66 |         instance_ = \x1b[01;31m\x1b[Kalgo\x1b[m\x1b[K.attr("init"); // Initlize the instance\n'}
+[4.040396] (acre_ctrl) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.040579] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:68:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcapture of non-variable \xe2\x80\x98\x1b[01m\x1b[KAlgorithmRunner::compute\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.040797] (acre_ctrl) StderrLine: {'line': b'   68 |         compute_fn_ = [\x1b[01;31m\x1b[Kcompute\x1b[m\x1b[K](void* p, const void* in) {\n'}
+[4.041199] (acre_ctrl) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.041255] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:27:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KControlOutput AlgorithmRunner::compute(const void*)\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.041306] (acre_ctrl) StderrLine: {'line': b'   27 |     ControlOutput \x1b[01;36m\x1b[Kcompute\x1b[m\x1b[K(const void* input) {\n'}
+[4.041354] (acre_ctrl) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.041411] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:\x1b[m\x1b[K In lambda function:\n'}
+[4.041464] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:69:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalgo\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[4.041514] (acre_ctrl) StderrLine: {'line': b'   69 |             return \x1b[01;31m\x1b[Kalgo\x1b[m\x1b[K.attr("compute")(p, in);\n'}
+[4.041560] (acre_ctrl) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.041606] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:68:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[4.041652] (acre_ctrl) StderrLine: {'line': b'   68 |         compute_fn_ = [compute\x1b[01;36m\x1b[K]\x1b[m\x1b[K(void* p, const void* in) {\n'}
+[4.041697] (acre_ctrl) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.041741] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:66:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<typeprefixerror>algo\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.041787] (acre_ctrl) StderrLine: {'line': b'   66 |         instance_ = \x1b[01;36m\x1b[Kalgo\x1b[m\x1b[K.attr("init"); // Initlize the instance\n'}
+[4.041835] (acre_ctrl) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.041890] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AlgorithmRunner::load_python(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.041940] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:70:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::function<ControlOutput(void*, const void*)>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KAlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[4.041990] (acre_ctrl) StderrLine: {'line': b'   70 |         \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[4.042035] (acre_ctrl) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.042080] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/future:47\x1b[m\x1b[K,\n'}
+[4.042125] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[4.042169] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.042212] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:3\x1b[m\x1b[K:\n'}
+[4.042256] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:530:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>::_Requires<std::function<_Res(_ArgTypes ...)>::_Callable<_Functor>, std::function<_Res(_ArgTypes ...)>&> std::function<_Res(_ArgTypes ...)>::operator=(_Functor&&) [with _Functor = _Functor; _Res = ControlOutput; _ArgTypes = {void*, const void*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.042308] (acre_ctrl) StderrLine: {'line': b'  530 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(_Functor&& __f)\n'}
+[4.042358] (acre_ctrl) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.042413] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:530:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.042464] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/ratio:39\x1b[m\x1b[K,\n'}
+[4.042511] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/chrono:39\x1b[m\x1b[K,\n'}
+[4.042556] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.042601] (acre_ctrl) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::function<ControlOutput(void*, const void*)>&]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.042647] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:353:8:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _ArgTypes> template<class _Cond, class _Tp> using _Requires = std::__enable_if_t<_Cond::value, _Tp> [with _Cond = std::function<ControlOutput(void*, const void*)>::_Callable<AlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>, AlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>, std::__invoke_result<AlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>&, void*, const void*> >; _Tp = std::function<ControlOutput(void*, const void*)>&; _Res = ControlOutput; _ArgTypes = {void*, const void*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.042702] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:530:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<ControlOutput(void*, const void*)>::_Requires<std::function<ControlOutput(void*, const void*)>::_Callable<_Functor, typename std::enable_if<(! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::function<ControlOutput(void*, const void*)> >::value), std::decay<_Tp> >::type::type, std::__invoke_result<typename std::enable_if<(! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::function<ControlOutput(void*, const void*)> >::value), std::decay<_Tp> >::type::type&, void*, const void*> >, std::function<ControlOutput(void*, const void*)>&> std::function<ControlOutput(void*, const void*)>::operator=<_Functor>(_Functor&&) [with _Functor = AlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.042758] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:70:9:\x1b[m\x1b[K   required from here\n'}
+[4.042804] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2205:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::function<ControlOutput(void*, const void*)>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.042850] (acre_ctrl) StderrLine: {'line': b' 2205 |     using \x1b[01;31m\x1b[K__enable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[4.042899] (acre_ctrl) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.042945] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/future:47\x1b[m\x1b[K,\n'}
+[4.042989] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[4.043033] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.043078] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:3\x1b[m\x1b[K:\n'}
+[4.043124] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:540:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::reference_wrapper<_Functor>) [with _Functor = _Functor; _Res = ControlOutput; _ArgTypes = {void*, const void*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.043175] (acre_ctrl) StderrLine: {'line': b'  540 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(reference_wrapper<_Functor> __f) noexcept\n'}
+[4.043221] (acre_ctrl) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.043264] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:540:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.043311] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8\x1b[m\x1b[K:\n'}
+[4.043360] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:70:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KAlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::reference_wrapper<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.043414] (acre_ctrl) StderrLine: {'line': b'   70 |         \x1b[01;36m\x1b[K}\x1b[m\x1b[K;\n'}
+[4.043459] (acre_ctrl) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.043502] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/future:47\x1b[m\x1b[K,\n'}
+[4.043546] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[4.043590] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.043635] (acre_ctrl) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:3\x1b[m\x1b[K:\n'}
+[4.043679] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:469:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(const std::function<_Res(_ArgTypes ...)>&) [with _Res = ControlOutput; _ArgTypes = {void*, const void*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.043723] (acre_ctrl) StderrLine: {'line': b'  469 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const function& __x)\n'}
+[4.043766] (acre_ctrl) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.043808] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:469:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KAlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<ControlOutput(void*, const void*)>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.043852] (acre_ctrl) StderrLine: {'line': b'  469 |       operator=(\x1b[01;36m\x1b[Kconst function& __x\x1b[m\x1b[K)\n'}
+[4.043901] (acre_ctrl) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.043949] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:487:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::function<_Res(_ArgTypes ...)>&&) [with _Res = ControlOutput; _ArgTypes = {void*, const void*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.043995] (acre_ctrl) StderrLine: {'line': b'  487 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(function&& __x) noexcept\n'}
+[4.044038] (acre_ctrl) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.044081] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:487:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KAlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<ControlOutput(void*, const void*)>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.044130] (acre_ctrl) StderrLine: {'line': b'  487 |       operator=(\x1b[01;36m\x1b[Kfunction&& __x\x1b[m\x1b[K) noexcept\n'}
+[4.044176] (acre_ctrl) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.044220] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:501:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::nullptr_t) [with _Res = ControlOutput; _ArgTypes = {void*, const void*}; std::nullptr_t = std::nullptr_t]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.044265] (acre_ctrl) StderrLine: {'line': b'  501 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(nullptr_t) noexcept\n'}
+[4.044309] (acre_ctrl) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.044351] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:501:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KAlgorithmRunner::load_python(const string&)::<lambda(void*, const void*)>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.044409] (acre_ctrl) StderrLine: {'line': b'  501 |       operator=(\x1b[01;36m\x1b[Knullptr_t\x1b[m\x1b[K) noexcept\n'}
+[4.044458] (acre_ctrl) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.044503] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8\x1b[m\x1b[K:\n'}
+[4.044547] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:62:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.044597] (acre_ctrl) StderrLine: {'line': b'   62 |     void load_python(\x1b[01;35m\x1b[Kconst std::string& path\x1b[m\x1b[K) {\n'}
+[4.044644] (acre_ctrl) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.110757] (-) TimerEvent: {}
+[4.178773] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointControlNode::ctrl_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.179087] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:85:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.179240] (acre_ctrl) StderrLine: {'line': b'   85 |         double \x1b[01;35m\x1b[Kdt\x1b[m\x1b[K = (now - last_tick_).seconds();\n'}
+[4.179354] (acre_ctrl) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.210892] (-) TimerEvent: {}
+[4.311258] (-) TimerEvent: {}
+[4.411644] (-) TimerEvent: {}
+[4.512036] (-) TimerEvent: {}
+[4.612447] (-) TimerEvent: {}
+[4.712846] (-) TimerEvent: {}
+[4.813235] (-) TimerEvent: {}
+[4.913630] (-) TimerEvent: {}
+[5.014019] (-) TimerEvent: {}
+[5.114406] (-) TimerEvent: {}
+[5.214783] (-) TimerEvent: {}
+[5.315172] (-) TimerEvent: {}
+[5.415577] (-) TimerEvent: {}
+[5.516559] (-) TimerEvent: {}
+[5.616945] (-) TimerEvent: {}
+[5.717361] (-) TimerEvent: {}
+[5.817818] (-) TimerEvent: {}
+[5.918157] (-) TimerEvent: {}
+[6.018506] (-) TimerEvent: {}
+[6.118824] (-) TimerEvent: {}
+[6.219146] (-) TimerEvent: {}
+[6.319482] (-) TimerEvent: {}
+[6.419819] (-) TimerEvent: {}
+[6.520167] (-) TimerEvent: {}
+[6.620480] (-) TimerEvent: {}
+[6.720790] (-) TimerEvent: {}
+[6.821155] (-) TimerEvent: {}
+[6.921598] (-) TimerEvent: {}
+[7.021888] (-) TimerEvent: {}
+[7.122225] (-) TimerEvent: {}
+[7.222574] (-) TimerEvent: {}
+[7.322934] (-) TimerEvent: {}
+[7.423309] (-) TimerEvent: {}
+[7.523698] (-) TimerEvent: {}
+[7.624099] (-) TimerEvent: {}
+[7.724452] (-) TimerEvent: {}
+[7.824828] (-) TimerEvent: {}
+[7.925213] (-) TimerEvent: {}
+[8.025597] (-) TimerEvent: {}
+[8.125975] (-) TimerEvent: {}
+[8.226347] (-) TimerEvent: {}
+[8.326747] (-) TimerEvent: {}
+[8.424686] (acre_ctrl) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:76: CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o] Error 1\n'}
+[8.424947] (acre_ctrl) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[8.426817] (-) TimerEvent: {}
+[8.527080] (-) TimerEvent: {}
+[8.627726] (-) TimerEvent: {}
+[8.728109] (-) TimerEvent: {}
+[8.828468] (-) TimerEvent: {}
+[8.928835] (-) TimerEvent: {}
+[9.029223] (-) TimerEvent: {}
+[9.129712] (-) TimerEvent: {}
+[9.230075] (-) TimerEvent: {}
+[9.330468] (-) TimerEvent: {}
+[9.430849] (-) TimerEvent: {}
+[9.531244] (-) TimerEvent: {}
+[9.631655] (-) TimerEvent: {}
+[9.651353] (acre_ctrl) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:645: CMakeFiles/point_control_node.dir/all] Error 2\n'}
+[9.651675] (acre_ctrl) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.654174] (acre_ctrl) CommandEnded: {'returncode': 2}
+[9.663852] (acre_ctrl) JobEnded: {'identifier': 'acre_ctrl', 'rc': 2}
+[9.674579] (-) EventReactorShutdown: {}

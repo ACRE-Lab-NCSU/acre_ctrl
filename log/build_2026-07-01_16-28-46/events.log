@@ -1,0 +1,300 @@
+[0.000000] (-) TimerEvent: {}
+[0.000343] (acre_ctrl) JobQueued: {'identifier': 'acre_ctrl', 'dependencies': OrderedDict()}
+[0.000467] (acre_ctrl) JobStarted: {'identifier': 'acre_ctrl'}
+[0.020264] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'cmake'}
+[0.021199] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'build'}
+[0.022278] (acre_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/acre_ctrl', '--', '-j16', '-l16'], 'cwd': '/workspace/build/acre_ctrl', 'env': OrderedDict([('HOSTNAME', 'fedora'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/acre_ctrl/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="enp1s0f0"/></Interfaces></General></Domain></CycloneDDS>'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install:/opt/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/workspace/build/acre_ctrl'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[0.098550] (-) TimerEvent: {}
+[0.130612] (acre_ctrl) StdoutLine: {'line': b'[  7%] Built target acre_ctrl__cpp\n'}
+[0.130990] (acre_ctrl) StdoutLine: {'line': b'[ 10%] Built target acre_ctrl__rs\n'}
+[0.131247] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target acre_ctrl__rosidl_generator_c\n'}
+[0.149090] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_acre_ctrl\n'}
+[0.173657] (acre_ctrl) StdoutLine: {'line': b'[ 20%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp\n'}
+[0.174710] (acre_ctrl) StdoutLine: {'line': b'[ 27%] Built target acre_ctrl__rosidl_typesupport_cpp\n'}
+[0.175273] (acre_ctrl) StdoutLine: {'line': b'[ 35%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp\n'}
+[0.191899] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_introspection_c\n'}
+[0.192262] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_c\n'}
+[0.193898] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c\n'}
+[0.198660] (-) TimerEvent: {}
+[0.239938] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl\n'}
+[0.281847] (acre_ctrl) StdoutLine: {'line': b'[ 60%] Built target acre_ctrl__py\n'}
+[0.282245] (acre_ctrl) StdoutLine: {'line': b'[ 65%] Built target spin_sample\n'}
+[0.295840] (acre_ctrl) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o\x1b[0m\n'}
+[0.298778] (-) TimerEvent: {}
+[0.301493] (acre_ctrl) StdoutLine: {'line': b'[ 75%] Built target point_control_node\n'}
+[0.327728] (acre_ctrl) StdoutLine: {'line': b'[ 80%] Built target acre_ctrl__rosidl_generator_py\n'}
+[0.370797] (acre_ctrl) StdoutLine: {'line': b'[ 90%] Built target acre_ctrl__rosidl_typesupport_c__pyext\n'}
+[0.371071] (acre_ctrl) StdoutLine: {'line': b'[ 90%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.371306] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext\n'}
+[0.398889] (-) TimerEvent: {}
+[0.499337] (-) TimerEvent: {}
+[0.511203] (acre_ctrl) StdoutLine: {'line': b'running egg_info\n'}
+[0.512465] (acre_ctrl) StdoutLine: {'line': b'writing acre_ctrl.egg-info/PKG-INFO\n'}
+[0.512758] (acre_ctrl) StdoutLine: {'line': b'writing dependency_links to acre_ctrl.egg-info/dependency_links.txt\n'}
+[0.513148] (acre_ctrl) StdoutLine: {'line': b'writing top-level names to acre_ctrl.egg-info/top_level.txt\n'}
+[0.516784] (acre_ctrl) StdoutLine: {'line': b"reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[0.517797] (acre_ctrl) StdoutLine: {'line': b"writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[0.572972] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_acre_ctrl_egg\n'}
+[0.599475] (-) TimerEvent: {}
+[0.699885] (-) TimerEvent: {}
+[0.800322] (-) TimerEvent: {}
+[0.900734] (-) TimerEvent: {}
+[1.001198] (-) TimerEvent: {}
+[1.101714] (-) TimerEvent: {}
+[1.202236] (-) TimerEvent: {}
+[1.302786] (-) TimerEvent: {}
+[1.403314] (-) TimerEvent: {}
+[1.503795] (-) TimerEvent: {}
+[1.604209] (-) TimerEvent: {}
+[1.704619] (-) TimerEvent: {}
+[1.805180] (-) TimerEvent: {}
+[1.905563] (-) TimerEvent: {}
+[2.005978] (-) TimerEvent: {}
+[2.106363] (-) TimerEvent: {}
+[2.206750] (-) TimerEvent: {}
+[2.307152] (-) TimerEvent: {}
+[2.407516] (-) TimerEvent: {}
+[2.507840] (-) TimerEvent: {}
+[2.608177] (-) TimerEvent: {}
+[2.708483] (-) TimerEvent: {}
+[2.808793] (-) TimerEvent: {}
+[2.909098] (-) TimerEvent: {}
+[3.009414] (-) TimerEvent: {}
+[3.109719] (-) TimerEvent: {}
+[3.210012] (-) TimerEvent: {}
+[3.310419] (-) TimerEvent: {}
+[3.410732] (-) TimerEvent: {}
+[3.511092] (-) TimerEvent: {}
+[3.611476] (-) TimerEvent: {}
+[3.711857] (-) TimerEvent: {}
+[3.812238] (-) TimerEvent: {}
+[3.912568] (-) TimerEvent: {}
+[4.012939] (-) TimerEvent: {}
+[4.113327] (-) TimerEvent: {}
+[4.213636] (-) TimerEvent: {}
+[4.314023] (-) TimerEvent: {}
+[4.414449] (-) TimerEvent: {}
+[4.514842] (-) TimerEvent: {}
+[4.615210] (-) TimerEvent: {}
+[4.715604] (-) TimerEvent: {}
+[4.815936] (-) TimerEvent: {}
+[4.916339] (-) TimerEvent: {}
+[5.016708] (-) TimerEvent: {}
+[5.117072] (-) TimerEvent: {}
+[5.217500] (-) TimerEvent: {}
+[5.317880] (-) TimerEvent: {}
+[5.418295] (-) TimerEvent: {}
+[5.518656] (-) TimerEvent: {}
+[5.619006] (-) TimerEvent: {}
+[5.719397] (-) TimerEvent: {}
+[5.819726] (-) TimerEvent: {}
+[5.920141] (-) TimerEvent: {}
+[6.020495] (-) TimerEvent: {}
+[6.120819] (-) TimerEvent: {}
+[6.221195] (-) TimerEvent: {}
+[6.321582] (-) TimerEvent: {}
+[6.421968] (-) TimerEvent: {}
+[6.522392] (-) TimerEvent: {}
+[6.622765] (-) TimerEvent: {}
+[6.723144] (-) TimerEvent: {}
+[6.823514] (-) TimerEvent: {}
+[6.923914] (-) TimerEvent: {}
+[7.024311] (-) TimerEvent: {}
+[7.124658] (-) TimerEvent: {}
+[7.225006] (-) TimerEvent: {}
+[7.325346] (-) TimerEvent: {}
+[7.425748] (-) TimerEvent: {}
+[7.526233] (-) TimerEvent: {}
+[7.626635] (-) TimerEvent: {}
+[7.727024] (-) TimerEvent: {}
+[7.827401] (-) TimerEvent: {}
+[7.927808] (-) TimerEvent: {}
+[8.028156] (-) TimerEvent: {}
+[8.128485] (-) TimerEvent: {}
+[8.228858] (-) TimerEvent: {}
+[8.329251] (-) TimerEvent: {}
+[8.429670] (-) TimerEvent: {}
+[8.530031] (-) TimerEvent: {}
+[8.630415] (-) TimerEvent: {}
+[8.730816] (-) TimerEvent: {}
+[8.831157] (-) TimerEvent: {}
+[8.931485] (-) TimerEvent: {}
+[9.031825] (-) TimerEvent: {}
+[9.132214] (-) TimerEvent: {}
+[9.232554] (-) TimerEvent: {}
+[9.332893] (-) TimerEvent: {}
+[9.433185] (-) TimerEvent: {}
+[9.533483] (-) TimerEvent: {}
+[9.633807] (-) TimerEvent: {}
+[9.734069] (-) TimerEvent: {}
+[9.834402] (-) TimerEvent: {}
+[9.934745] (-) TimerEvent: {}
+[10.034982] (-) TimerEvent: {}
+[10.135311] (-) TimerEvent: {}
+[10.235630] (-) TimerEvent: {}
+[10.335891] (-) TimerEvent: {}
+[10.436215] (-) TimerEvent: {}
+[10.536531] (-) TimerEvent: {}
+[10.636873] (-) TimerEvent: {}
+[10.737165] (-) TimerEvent: {}
+[10.837521] (-) TimerEvent: {}
+[10.937896] (-) TimerEvent: {}
+[11.038299] (-) TimerEvent: {}
+[11.138662] (-) TimerEvent: {}
+[11.239014] (-) TimerEvent: {}
+[11.339436] (-) TimerEvent: {}
+[11.439982] (-) TimerEvent: {}
+[11.517667] (acre_ctrl) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable sportmode_driver\x1b[0m\n'}
+[11.540218] (-) TimerEvent: {}
+[11.640610] (-) TimerEvent: {}
+[11.741002] (-) TimerEvent: {}
+[11.841478] (-) TimerEvent: {}
+[11.941905] (-) TimerEvent: {}
+[12.042333] (-) TimerEvent: {}
+[12.142745] (-) TimerEvent: {}
+[12.222061] (acre_ctrl) StdoutLine: {'line': b'[100%] Built target sportmode_driver\n'}
+[12.236387] (acre_ctrl) CommandEnded: {'returncode': 0}
+[12.237632] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'install'}
+[12.242830] (-) TimerEvent: {}
+[12.246752] (acre_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/acre_ctrl'], 'cwd': '/workspace/build/acre_ctrl', 'env': OrderedDict([('HOSTNAME', 'fedora'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/acre_ctrl/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="enp1s0f0"/></Interfaces></General></Domain></CycloneDDS>'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install:/opt/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/workspace/build/acre_ctrl'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[12.255843] (acre_ctrl) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.256147] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/rosidl_interfaces/acre_ctrl\n'}
+[12.256339] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl\n'}
+[12.256482] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg\n'}
+[12.256625] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.256811] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv\n'}
+[12.256940] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/go2_start_sequence.h\n'}
+[12.257044] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail\n'}
+[12.257209] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__functions.c\n'}
+[12.257381] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__functions.h\n'}
+[12.257454] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__struct.h\n'}
+[12.257517] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.h\n'}
+[12.257565] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/library_path.sh\n'}
+[12.257611] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/library_path.dsv\n'}
+[12.257678] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_generator_c.so\n'}
+[12.257728] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl\n'}
+[12.257774] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg\n'}
+[12.257829] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.257886] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv\n'}
+[12.257959] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail\n'}
+[12.258021] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_fastrtps_c.h\n'}
+[12.258070] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_fastrtps_c.so\n'}
+[12.258129] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl\n'}
+[12.258208] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg\n'}
+[12.258264] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.258310] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv\n'}
+[12.258356] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/go2_start_sequence.hpp\n'}
+[12.258424] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail\n'}
+[12.258483] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__builder.hpp\n'}
+[12.258574] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__struct.hpp\n'}
+[12.258653] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__traits.hpp\n'}
+[12.258722] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.hpp\n'}
+[12.258769] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl\n'}
+[12.258828] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg\n'}
+[12.258875] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.258920] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv\n'}
+[12.258964] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail\n'}
+[12.259008] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.259053] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/dds_fastrtps\n'}
+[12.259148] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.259353] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl\n'}
+[12.259479] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg\n'}
+[12.259607] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.259678] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv\n'}
+[12.259747] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail\n'}
+[12.259797] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_introspection_c.h\n'}
+[12.259856] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.c\n'}
+[12.259927] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_introspection_c.so\n'}
+[12.260006] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_c.so\n'}
+[12.260090] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl\n'}
+[12.260180] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv\n'}
+[12.260228] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail\n'}
+[12.260274] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.260321] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.cpp\n'}
+[12.260369] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_introspection_cpp.so\n'}
+[12.260413] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_cpp.so\n'}
+[12.260458] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/pythonpath.sh\n'}
+[12.260509] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/pythonpath.dsv\n'}
+[12.260559] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info\n'}
+[12.260605] (acre_ctrl) StdoutLine: {'line': b'-- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.260650] (acre_ctrl) StdoutLine: {'line': b'-- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.260695] (acre_ctrl) StdoutLine: {'line': b'-- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.260738] (acre_ctrl) StdoutLine: {'line': b'-- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.260783] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl\n'}
+[12.260827] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/__init__.py\n'}
+[12.260871] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv\n'}
+[12.260914] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv/_go2_start_sequence.py\n'}
+[12.260957] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv/_go2_start_sequence_s.c\n'}
+[12.261002] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv/__init__.py\n'}
+[12.261066] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/_acre_ctrl_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.261123] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/_acre_ctrl_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.261175] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/_acre_ctrl_s.ep.rosidl_typesupport_c.c\n'}
+[12.261219] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/libacre_ctrl__rosidl_generator_py.so\n'}
+[12.261263] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.261309] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.261354] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.285641] (acre_ctrl) StdoutLine: {'line': b"Listing '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl'...\n"}
+[12.285948] (acre_ctrl) StdoutLine: {'line': b"Listing '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv'...\n"}
+[12.289936] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.290617] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.291112] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.291435] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_generator_py.so\n'}
+[12.291634] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/rust_packages/acre_ctrl\n'}
+[12.291780] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust\n'}
+[12.291868] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src\n'}
+[12.292025] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/srv.rs\n'}
+[12.292149] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/srv\n'}
+[12.292264] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/srv/rmw.rs\n'}
+[12.292330] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/lib.rs\n'}
+[12.292380] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/Cargo.toml\n'}
+[12.292474] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/build.rs\n'}
+[12.292529] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence.idl\n'}
+[12.292577] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence.srv\n'}
+[12.292624] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence_Request.msg\n'}
+[12.292677] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence_Response.msg\n'}
+[12.292725] (acre_ctrl) StdoutLine: {'line': b'-- Installing: /workspace/install/acre_ctrl/lib/acre_ctrl/sportmode_driver\n'}
+[12.305661] (acre_ctrl) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/acre_ctrl/lib/acre_ctrl/sportmode_driver" to ""\n'}
+[12.305838] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/acre_ctrl/point_control_node\n'}
+[12.306086] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/lib/acre_ctrl/libspin_sample.so\n'}
+[12.306272] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/package_run_dependencies/acre_ctrl\n'}
+[12.306381] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/parent_prefix_path/acre_ctrl\n'}
+[12.306474] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/ament_prefix_path.sh\n'}
+[12.306530] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/ament_prefix_path.dsv\n'}
+[12.306583] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/path.sh\n'}
+[12.306657] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/path.dsv\n'}
+[12.306742] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.bash\n'}
+[12.306803] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.sh\n'}
+[12.306852] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.zsh\n'}
+[12.306904] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.dsv\n'}
+[12.306955] (acre_ctrl) StdoutLine: {'line': b'-- Installing: /workspace/install/acre_ctrl/share/acre_ctrl/package.dsv\n'}
+[12.307041] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/packages/acre_ctrl\n'}
+[12.307143] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_cExport.cmake\n'}
+[12.307204] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.307285] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.307362] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.307413] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_cppExport.cmake\n'}
+[12.307482] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.307534] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.307583] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.307648] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.307706] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cExport.cmake\n'}
+[12.307769] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.307835] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.307898] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.307963] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cppExport.cmake\n'}
+[12.308027] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.308094] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_pyExport.cmake\n'}
+[12.308176] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.308228] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/rosidl_cmake-extras.cmake\n'}
+[12.308275] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.308319] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.308364] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.308408] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.308452] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.308502] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.308546] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrlConfig.cmake\n'}
+[12.308595] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrlConfig-version.cmake\n'}
+[12.308639] (acre_ctrl) StdoutLine: {'line': b'-- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/package.xml\n'}
+[12.310951] (acre_ctrl) CommandEnded: {'returncode': 0}
+[12.327696] (acre_ctrl) JobEnded: {'identifier': 'acre_ctrl', 'rc': 0}
+[12.328344] (-) EventReactorShutdown: {}

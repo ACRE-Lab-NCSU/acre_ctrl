@@ -1,0 +1,51 @@
+[0.023s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[0.155s] [  5%] Built target acre_ctrl__cpp
+[0.156s] [  5%] Built target acre_ctrl__rs
+[0.158s] [ 12%] Built target acre_ctrl__rosidl_generator_c
+[0.174s] [ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[0.198s] [ 27%] Built target acre_ctrl__rosidl_typesupport_cpp
+[0.199s] [ 30%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[0.199s] [ 35%] Built target acre_ctrl__rosidl_typesupport_c
+[0.199s] [ 42%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[0.199s] [ 50%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[0.200s] [ 57%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[0.241s] [ 57%] Built target acre_ctrl
+[0.267s] [35m[1mConsolidate compiler generated dependencies of target sportmode_driver[0m
+[0.268s] [35m[1mConsolidate compiler generated dependencies of target point_control_node[0m
+[0.281s] [ 60%] Built target acre_ctrl__py
+[0.283s] [ 65%] Built target spin_sample
+[0.328s] [ 72%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o[0m
+[0.329s] [ 72%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[0.329s] [ 75%] Built target acre_ctrl__rosidl_generator_py
+[0.329s] [ 77%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o[0m
+[0.376s] [ 87%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[0.376s] [ 87%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[0.378s] [ 92%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[0.539s] running egg_info
+[0.541s] writing acre_ctrl.egg-info/PKG-INFO
+[0.541s] writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+[0.541s] writing top-level names to acre_ctrl.egg-info/top_level.txt
+[0.545s] reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.545s] writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.585s] [ 92%] Built target ament_cmake_python_build_acre_ctrl_egg
+[3.421s] In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[3.421s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.421s]    98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req);
+[3.421s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[3.494s] In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[3.494s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.495s]    98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req);
+[3.495s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[3.558s] In file included from [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:10[m[K:
+[3.559s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.559s]    98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req);
+[3.559s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[6.265s] gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:90: CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o] Error 1
+[6.265s] gmake[1]: *** [CMakeFiles/Makefile2:645: CMakeFiles/point_control_node.dir/all] Error 2
+[6.265s] gmake[1]: *** Waiting for unfinished jobs....
+[6.345s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:90: CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o] Error 1
+[6.345s] gmake[2]: *** Waiting for unfinished jobs....
+[7.224s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+[7.224s] gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+[7.224s] gmake: *** [Makefile:146: all] Error 2
+[7.227s] Invoked command in '/workspace/build/acre_ctrl' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16

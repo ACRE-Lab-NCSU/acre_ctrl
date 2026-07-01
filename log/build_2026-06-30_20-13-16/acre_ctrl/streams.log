@@ -1,0 +1,183 @@
+[0.024s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[0.131s] [  5%] Built target acre_ctrl__cpp
+[0.131s] [  5%] Built target acre_ctrl__rs
+[0.133s] [ 12%] Built target acre_ctrl__rosidl_generator_c
+[0.150s] [ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[0.171s] [ 20%] Built target acre_ctrl__rosidl_typesupport_c
+[0.173s] [ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[0.174s] [ 50%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[0.174s] [ 42%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[0.174s] [ 52%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[0.175s] [ 57%] Built target acre_ctrl__rosidl_typesupport_cpp
+[0.217s] [ 57%] Built target acre_ctrl
+[0.258s] [ 60%] Built target acre_ctrl__py
+[0.260s] [ 65%] Built target spin_sample
+[0.275s] [ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o[0m
+[0.276s] [ 70%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[0.304s] [ 75%] Built target acre_ctrl__rosidl_generator_py
+[0.359s] [ 80%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[0.360s] [ 85%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[0.360s] [ 90%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[0.535s] running egg_info
+[0.536s] writing acre_ctrl.egg-info/PKG-INFO
+[0.536s] writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+[0.537s] writing top-level names to acre_ctrl.egg-info/top_level.txt
+[0.540s] reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.541s] writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.583s] [ 90%] Built target ament_cmake_python_build_acre_ctrl_egg
+[0.986s] In file included from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:2[m[K,
+[0.986s]                  from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[0.986s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:79:83:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+[0.986s]    79 | #define REGISTER_ALGORITHM(ClassName, InputType)                                  \
+[0.986s]       |                                                                                    
+[3.769s] In file included from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[3.769s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:[m[K In member function ‘[01m[Kvoid AlgorithmRunner::load_python(const string&)[m[K’:
+[3.769s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:62:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[3.769s]    62 |     void load_python([01;35m[Kconst std::string& path[m[K) {
+[3.769s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[11.891s] [ 92%] [32m[1mLinking CXX executable sportmode_driver[0m
+[12.552s] [ 95%] [32m[1mLinking CXX executable point_control_node[0m
+[12.689s] [ 97%] Built target sportmode_driver
+[13.297s] [100%] Built target point_control_node
+[13.311s] Invoked command in '/workspace/build/acre_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[13.323s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspace/build/acre_ctrl
+[13.331s] -- Install configuration: ""
+[13.331s] -- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/rosidl_interfaces/acre_ctrl
+[13.331s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_generator_c__visibility_control.h
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/go2_start_sequence.h
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__functions.c
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__functions.h
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__struct.h
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.h
+[13.332s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/library_path.sh
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/library_path.dsv
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_generator_c.so
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_fastrtps_c.h
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_fastrtps_c.so
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_generator_cpp__visibility_control.hpp
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/go2_start_sequence.hpp
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail
+[13.333s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__builder.hpp
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__struct.hpp
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__traits.hpp
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.hpp
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_fastrtps_cpp.hpp
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/dds_fastrtps
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_fastrtps_cpp.so
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail
+[13.334s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_introspection_c.h
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.c
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_introspection_c.so
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_c.so
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__rosidl_typesupport_introspection_cpp.hpp
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/include/acre_ctrl/acre_ctrl/srv/detail/go2_start_sequence__type_support.cpp
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_introspection_cpp.so
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_typesupport_cpp.so
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/pythonpath.sh
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/pythonpath.dsv
+[13.335s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info
+[13.335s] -- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/PKG-INFO
+[13.335s] -- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/dependency_links.txt
+[13.335s] -- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/top_level.txt
+[13.335s] -- Installing: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl-0.0.0-py3.10.egg-info/SOURCES.txt
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/__init__.py
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv/_go2_start_sequence.py
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv/_go2_start_sequence_s.c
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv/__init__.py
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/_acre_ctrl_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/_acre_ctrl_s.ep.rosidl_typesupport_introspection_c.c
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/_acre_ctrl_s.ep.rosidl_typesupport_c.c
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/libacre_ctrl__rosidl_generator_py.so
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.336s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.361s] Listing '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl'...
+[13.362s] Listing '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/srv'...
+[13.365s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[13.366s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[13.366s] -- Up-to-date: /workspace/install/acre_ctrl/local/lib/python3.10/dist-packages/acre_ctrl/acre_ctrl_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[13.366s] -- Up-to-date: /workspace/install/acre_ctrl/lib/libacre_ctrl__rosidl_generator_py.so
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/rust_packages/acre_ctrl
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/srv.rs
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/srv
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/srv/rmw.rs
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/src/lib.rs
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/Cargo.toml
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/rust/build.rs
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence.idl
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence.srv
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence_Request.msg
+[13.367s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/srv/Go2StartSequence_Response.msg
+[13.367s] -- Installing: /workspace/install/acre_ctrl/lib/acre_ctrl/sportmode_driver
+[13.380s] -- Set runtime path of "/workspace/install/acre_ctrl/lib/acre_ctrl/sportmode_driver" to ""
+[13.380s] -- Installing: /workspace/install/acre_ctrl/lib/acre_ctrl/point_control_node
+[13.386s] -- Set runtime path of "/workspace/install/acre_ctrl/lib/acre_ctrl/point_control_node" to ""
+[13.386s] -- Up-to-date: /workspace/install/acre_ctrl/lib/acre_ctrl/libspin_sample.so
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/package_run_dependencies/acre_ctrl
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/parent_prefix_path/acre_ctrl
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/ament_prefix_path.sh
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/ament_prefix_path.dsv
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/path.sh
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/environment/path.dsv
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.bash
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.sh
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.zsh
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/local_setup.dsv
+[13.387s] -- Installing: /workspace/install/acre_ctrl/share/acre_ctrl/package.dsv
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/ament_index/resource_index/packages/acre_ctrl
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_cExport.cmake
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_cExport-noconfig.cmake
+[13.387s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_cppExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cExport-noconfig.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cppExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cppExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrl__rosidl_typesupport_cppExport-noconfig.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_pyExport.cmake
+[13.388s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/export_acre_ctrl__rosidl_generator_pyExport-noconfig.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/rosidl_cmake-extras.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_libraries-extras.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_targets-extras.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrlConfig.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/cmake/acre_ctrlConfig-version.cmake
+[13.389s] -- Up-to-date: /workspace/install/acre_ctrl/share/acre_ctrl/package.xml
+[13.392s] Invoked command in '/workspace/build/acre_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspace/build/acre_ctrl

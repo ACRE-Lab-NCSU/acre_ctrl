@@ -1,0 +1,86 @@
+[0.000000] (-) TimerEvent: {}
+[0.000147] (acre_ctrl) JobQueued: {'identifier': 'acre_ctrl', 'dependencies': OrderedDict()}
+[0.000296] (acre_ctrl) JobStarted: {'identifier': 'acre_ctrl'}
+[0.012921] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'cmake'}
+[0.013581] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'build'}
+[0.014206] (acre_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/acre_ctrl', '--', '-j16', '-l16'], 'cwd': '/workspace/build/acre_ctrl', 'env': OrderedDict([('HOSTNAME', 'fedora'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="enp1s0f0"/></Interfaces></General></Domain></CycloneDDS>'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/workspace/build/acre_ctrl'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[0.053474] (acre_ctrl) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098921] (-) TimerEvent: {}
+[0.197583] (acre_ctrl) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199019] (-) TimerEvent: {}
+[0.228106] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.230907] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.237697] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.248223] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.261957] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.291964] (acre_ctrl) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.292996] (acre_ctrl) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.299121] (-) TimerEvent: {}
+[0.305615] (acre_ctrl) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.338721] (acre_ctrl) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.346093] (acre_ctrl) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.354613] (acre_ctrl) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.365844] (acre_ctrl) StdoutLine: {'line': b'-- Found unitree_go: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)\n'}
+[0.374536] (acre_ctrl) StdoutLine: {'line': b'-- Found unitree_api: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)\n'}
+[0.386073] (acre_ctrl) StdoutLine: {'line': b'-- Found pybind11: /usr/include (found version "2.9.1")\n'}
+[0.399219] (-) TimerEvent: {}
+[0.499503] (-) TimerEvent: {}
+[0.576448] (acre_ctrl) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.599630] (-) TimerEvent: {}
+[0.699973] (-) TimerEvent: {}
+[0.800298] (-) TimerEvent: {}
+[0.814599] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.900419] (-) TimerEvent: {}
+[0.911800] (acre_ctrl) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.930815] (acre_ctrl) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.949470] (acre_ctrl) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.949714] (acre_ctrl) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.949835] (acre_ctrl) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.000507] (-) TimerEvent: {}
+[1.005979] (acre_ctrl) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[1.006235] (acre_ctrl) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[1.006371] (acre_ctrl) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[1.006515] (acre_ctrl) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.006621] (acre_ctrl) StderrLine: {'line': b'  CMakeLists.txt:41 (rosidl_target_interfaces)\n'}
+[1.006722] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.006820] (acre_ctrl) StderrLine: {'line': b'\x1b[0m\n'}
+[1.007216] (acre_ctrl) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[1.007385] (acre_ctrl) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[1.007544] (acre_ctrl) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[1.007665] (acre_ctrl) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.007774] (acre_ctrl) StderrLine: {'line': b'  CMakeLists.txt:49 (rosidl_target_interfaces)\n'}
+[1.007874] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.007962] (acre_ctrl) StderrLine: {'line': b'\x1b[0m\n'}
+[1.008005] (acre_ctrl) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:51 (target_link_libraries):\n'}
+[1.008050] (acre_ctrl) StderrLine: {'line': b'  The plain signature for target_link_libraries has already been used with\n'}
+[1.008094] (acre_ctrl) StderrLine: {'line': b'  the target "point_control_node".  All uses of target_link_libraries with a\n'}
+[1.008138] (acre_ctrl) StderrLine: {'line': b'  target must be either all-keyword or all-plain.\n'}
+[1.008183] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.008227] (acre_ctrl) StderrLine: {'line': b'  The uses of the plain signature are here:\n'}
+[1.008272] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.008315] (acre_ctrl) StderrLine: {'line': b'   * /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries)\n'}
+[1.008453] (acre_ctrl) StderrLine: {'line': b'   * /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:58 (target_link_libraries)\n'}
+[1.008508] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.008553] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.008598] (acre_ctrl) StderrLine: {'line': b'\x1b[0m\n'}
+[1.008642] (acre_ctrl) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[1.008696] (acre_ctrl) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[1.008780] (acre_ctrl) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[1.008829] (acre_ctrl) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.008875] (acre_ctrl) StderrLine: {'line': b'  CMakeLists.txt:58 (rosidl_target_interfaces)\n'}
+[1.008919] (acre_ctrl) StderrLine: {'line': b'\n'}
+[1.008973] (acre_ctrl) StderrLine: {'line': b'\x1b[0m\n'}
+[1.009017] (acre_ctrl) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.027161] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.027717] (acre_ctrl) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /workspace/src/acre_ctrl/include/acre_ctrl\n'}
+[1.027811] (acre_ctrl) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.028502] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.030041] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.030116] (acre_ctrl) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.030382] (acre_ctrl) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.032045] (acre_ctrl) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.032214] (acre_ctrl) StdoutLine: {'line': b'See also "/workspace/build/acre_ctrl/CMakeFiles/CMakeOutput.log".\n'}
+[1.039732] (acre_ctrl) StderrLine: {'line': b'gmake: *** [Makefile:914: cmake_check_build_system] Error 1\n'}
+[1.042673] (acre_ctrl) CommandEnded: {'returncode': 2}
+[1.051880] (acre_ctrl) JobEnded: {'identifier': 'acre_ctrl', 'rc': 2}
+[1.062384] (-) EventReactorShutdown: {}

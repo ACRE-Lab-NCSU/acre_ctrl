@@ -5,8 +5,8 @@
 #include "nav_msgs/msg/odometry.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "acre_ctrl/srv/go2_start_sequence.hpp"
-#include "algorithm_runner.hpp"
-#include "input_builders.hpp"
+#include "algo/algorithm_runner.hpp"
+//#include "input_builders.hpp"
 
 #define START_SEQUENCE_SERVICE "go2_start_sequence"
 
@@ -15,7 +15,7 @@ public:
     PointControlNode() : Node("point_control_node")
     {
         // Declare parameters
-        this->declare_parameter("frequency",  100.0);
+        this->declare_parameter("frequency",  10.0);
         this->declare_parameter("algorithm",  "");
 
         this->get_parameter("frequency",  frequency_);
@@ -82,6 +82,7 @@ private:
     {
         // Track dt
         auto now = this->now();
+        /**
         double dt = (now - last_tick_).seconds();
         last_tick_ = now;
 
@@ -99,11 +100,18 @@ private:
         msg.header.frame_id = "base_link";
         msg.twist.linear.x  = out.linear_vel;
         msg.twist.angular.z = out.angular_vel;
+        */
+        geometry_msgs::msg::TwistStamped msg;
+        msg.header.stamp    = now;
+        msg.header.frame_id = "base_link";
+        msg.twist.linear.x  = 0.0;
+        msg.twist.linear.y = 0.0;
+        msg.twist.angular.z = 0.5;
         twist_pub_->publish(msg);
     }
 
     // Parameters
-    double      frequency_ = 100.0;
+    double      frequency_ = 10.0;
     std::string algo_path_;
 
     // State

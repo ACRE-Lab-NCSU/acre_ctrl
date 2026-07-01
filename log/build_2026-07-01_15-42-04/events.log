@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.000290] (acre_ctrl) JobQueued: {'identifier': 'acre_ctrl', 'dependencies': OrderedDict()}
+[0.000940] (acre_ctrl) JobStarted: {'identifier': 'acre_ctrl'}
+[0.014540] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'cmake'}
+[0.015403] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'build'}
+[0.016199] (acre_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/acre_ctrl', '--', '-j16', '-l16'], 'cwd': '/workspace/build/acre_ctrl', 'env': OrderedDict([('HOSTNAME', 'fedora'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/acre_ctrl/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="enp1s0f0"/></Interfaces></General></Domain></CycloneDDS>'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install:/opt/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/workspace/build/acre_ctrl'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[0.092563] (acre_ctrl) StdoutLine: {'line': b'[  2%] Built target acre_ctrl__rs\n'}
+[0.093094] (acre_ctrl) StdoutLine: {'line': b'[ 10%] Built target acre_ctrl__cpp\n'}
+[0.093235] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target acre_ctrl__rosidl_generator_c\n'}
+[0.099385] (-) TimerEvent: {}
+[0.104827] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_acre_ctrl\n'}
+[0.122151] (acre_ctrl) StdoutLine: {'line': b'[ 27%] Built target acre_ctrl__rosidl_typesupport_c\n'}
+[0.122423] (acre_ctrl) StdoutLine: {'line': b'[ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c\n'}
+[0.122633] (acre_ctrl) StdoutLine: {'line': b'[ 35%] Built target acre_ctrl__rosidl_typesupport_cpp\n'}
+[0.124071] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp\n'}
+[0.124190] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c\n'}
+[0.124724] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp\n'}
+[0.153578] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl\n'}
+[0.181991] (acre_ctrl) StdoutLine: {'line': b'[ 62%] Built target acre_ctrl__py\n'}
+[0.182284] (acre_ctrl) StdoutLine: {'line': b'[ 65%] Built target spin_sample\n'}
+[0.192790] (acre_ctrl) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o\x1b[0m\n'}
+[0.193059] (acre_ctrl) StdoutLine: {'line': b'[ 75%] Built target point_control_node\n'}
+[0.199465] (-) TimerEvent: {}
+[0.212831] (acre_ctrl) StdoutLine: {'line': b'[ 80%] Built target acre_ctrl__rosidl_generator_py\n'}
+[0.244145] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target acre_ctrl__rosidl_typesupport_c__pyext\n'}
+[0.244432] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext\n'}
+[0.244572] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.299589] (-) TimerEvent: {}
+[0.352293] (acre_ctrl) StdoutLine: {'line': b'running egg_info\n'}
+[0.352934] (acre_ctrl) StdoutLine: {'line': b'writing acre_ctrl.egg-info/PKG-INFO\n'}
+[0.353257] (acre_ctrl) StdoutLine: {'line': b'writing dependency_links to acre_ctrl.egg-info/dependency_links.txt\n'}
+[0.353514] (acre_ctrl) StdoutLine: {'line': b'writing top-level names to acre_ctrl.egg-info/top_level.txt\n'}
+[0.355375] (acre_ctrl) StdoutLine: {'line': b"reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[0.355927] (acre_ctrl) StdoutLine: {'line': b"writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[0.385604] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_acre_ctrl_egg\n'}
+[0.399728] (-) TimerEvent: {}
+[0.500222] (-) TimerEvent: {}
+[0.600712] (-) TimerEvent: {}
+[0.701075] (-) TimerEvent: {}
+[0.801415] (-) TimerEvent: {}
+[0.901873] (-) TimerEvent: {}
+[1.002223] (-) TimerEvent: {}
+[1.102535] (-) TimerEvent: {}
+[1.202906] (-) TimerEvent: {}
+[1.303221] (-) TimerEvent: {}
+[1.403609] (-) TimerEvent: {}
+[1.503939] (-) TimerEvent: {}
+[1.604338] (-) TimerEvent: {}
+[1.704720] (-) TimerEvent: {}
+[1.805099] (-) TimerEvent: {}
+[1.905495] (-) TimerEvent: {}
+[2.005876] (-) TimerEvent: {}
+[2.106272] (-) TimerEvent: {}
+[2.206639] (-) TimerEvent: {}
+[2.306948] (-) TimerEvent: {}
+[2.407285] (-) TimerEvent: {}
+[2.507651] (-) TimerEvent: {}
+[2.607994] (-) TimerEvent: {}
+[2.708355] (-) TimerEvent: {}
+[2.808720] (-) TimerEvent: {}
+[2.909108] (-) TimerEvent: {}
+[2.939080] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Go2SportClientNode::start_sequence(std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Request_<std::allocator<void> > >, std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.939460] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:74:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KSportClient::ClassicWalk(unitree_api::msg::Request&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.939686] (acre_ctrl) StderrLine: {'line': b'   74 |         \x1b[01;31m\x1b[Ksport_client_.ClassicWalk(req)\x1b[m\x1b[K;       // balanced standing -> Agile\n'}
+[2.939879] (acre_ctrl) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.940059] (acre_ctrl) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:10\x1b[m\x1b[K:\n'}
+[2.940231] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:303:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid SportClient::ClassicWalk(unitree_api::msg::Request&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.940428] (acre_ctrl) StderrLine: {'line': b'  303 |   void \x1b[01;36m\x1b[KClassicWalk\x1b[m\x1b[K(unitree_api::msg::Request &req, bool flag);\n'}
+[2.940598] (acre_ctrl) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.940766] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:303:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[3.009237] (-) TimerEvent: {}
+[3.109687] (-) TimerEvent: {}
+[3.210541] (-) TimerEvent: {}
+[3.310943] (-) TimerEvent: {}
+[3.411355] (-) TimerEvent: {}
+[3.511855] (-) TimerEvent: {}
+[3.612253] (-) TimerEvent: {}
+[3.712684] (-) TimerEvent: {}
+[3.813074] (-) TimerEvent: {}
+[3.913471] (-) TimerEvent: {}
+[4.013861] (-) TimerEvent: {}
+[4.114238] (-) TimerEvent: {}
+[4.214658] (-) TimerEvent: {}
+[4.315010] (-) TimerEvent: {}
+[4.415315] (-) TimerEvent: {}
+[4.515664] (-) TimerEvent: {}
+[4.616023] (-) TimerEvent: {}
+[4.716404] (-) TimerEvent: {}
+[4.816762] (-) TimerEvent: {}
+[4.917145] (-) TimerEvent: {}
+[5.017546] (-) TimerEvent: {}
+[5.117920] (-) TimerEvent: {}
+[5.218280] (-) TimerEvent: {}
+[5.318784] (-) TimerEvent: {}
+[5.419168] (-) TimerEvent: {}
+[5.519553] (-) TimerEvent: {}
+[5.619926] (-) TimerEvent: {}
+[5.720299] (-) TimerEvent: {}
+[5.820693] (-) TimerEvent: {}
+[5.921109] (-) TimerEvent: {}
+[6.021480] (-) TimerEvent: {}
+[6.115718] (acre_ctrl) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1\n'}
+[6.116133] (acre_ctrl) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2\n'}
+[6.116493] (acre_ctrl) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.119102] (acre_ctrl) CommandEnded: {'returncode': 2}
+[6.121539] (-) TimerEvent: {}
+[6.132723] (acre_ctrl) JobEnded: {'identifier': 'acre_ctrl', 'rc': 2}
+[6.143273] (-) EventReactorShutdown: {}

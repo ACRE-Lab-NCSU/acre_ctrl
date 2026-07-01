@@ -1,0 +1,30 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found unitree_go: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+-- Found unitree_api: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'msg/Go2Mode.msg' doesn't
+  exist relative to the CMAKE_CURRENT_SOURCE_DIR '/workspace/src/acre_ctrl'
+Call Stack (most recent call first):
+  CMakeLists.txt:21 (rosidl_generate_interfaces)
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/workspace/build/acre_ctrl/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

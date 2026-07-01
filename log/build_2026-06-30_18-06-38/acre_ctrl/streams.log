@@ -1,0 +1,172 @@
+[0.026s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[0.077s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.229s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.265s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.267s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.276s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.289s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.306s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.347s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.349s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.367s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.413s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.422s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.433s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.445s] -- Found unitree_go: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+[0.454s] -- Found unitree_api: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+[0.466s] -- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+[0.665s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.903s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.997s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.016s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.035s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.035s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.035s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.092s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[1.092s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[1.093s]   rosidl_target_interfaces()
+[1.093s] Call Stack (most recent call first):
+[1.093s]   CMakeLists.txt:40 (rosidl_target_interfaces)
+[1.093s] 
+[1.093s] [0m
+[1.093s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[1.093s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[1.093s]   rosidl_target_interfaces()
+[1.094s] Call Stack (most recent call first):
+[1.094s]   CMakeLists.txt:48 (rosidl_target_interfaces)
+[1.094s] 
+[1.094s] [0m
+[1.095s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[1.095s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[1.095s]   rosidl_target_interfaces()
+[1.095s] Call Stack (most recent call first):
+[1.095s]   CMakeLists.txt:55 (rosidl_target_interfaces)
+[1.095s] 
+[1.095s] [0m
+[1.095s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.105s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.106s] -- Configured cppcheck include dirs: /workspace/src/acre_ctrl/include/acre_ctrl
+[1.106s] -- Configured cppcheck exclude dirs and/or files: 
+[1.107s] -- Added test 'lint_cmake' to check CMake code style
+[1.108s] -- Added test 'uncrustify' to check C / C++ code style
+[1.109s] -- Configured uncrustify additional arguments: 
+[1.109s] -- Added test 'xmllint' to check XML markup files
+[1.110s] -- Configuring done
+[1.159s] -- Generating done
+[1.174s] -- Build files have been written to: /workspace/build/acre_ctrl
+[1.208s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_c[0m
+[1.217s] [  2%] Built target acre_ctrl__rs
+[1.218s] [  5%] Built target acre_ctrl__cpp
+[1.220s] [ 12%] Built target acre_ctrl__rosidl_generator_c
+[1.228s] [ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[1.229s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_cpp[0m
+[1.229s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_cpp[0m
+[1.229s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_cpp[0m
+[1.230s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c[0m
+[1.230s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c[0m
+[1.231s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c[0m
+[1.243s] [ 27%] Built target acre_ctrl__rosidl_typesupport_c
+[1.243s] [ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[1.244s] [ 35%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[1.245s] [ 42%] Built target acre_ctrl__rosidl_typesupport_cpp
+[1.246s] [ 50%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[1.250s] [ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[1.272s] [ 57%] Built target acre_ctrl
+[1.284s] [35m[1mConsolidate compiler generated dependencies of target spin_sample[0m
+[1.295s] [ 67%] Built target acre_ctrl__py
+[1.295s] [ 67%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o[0m
+[1.295s] [ 67%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o[0m
+[1.295s] [ 67%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[1.297s] [ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o[0m
+[1.298s] [ 72%] [32mBuilding CXX object CMakeFiles/spin_sample.dir/src/algo/spin_sample.cpp.o[0m
+[1.305s] [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kcommon/ros2_sport_client.h: No such file or directory
+[1.305s]     4 | #include [01;31m[K"common/ros2_sport_client.h"[m[K
+[1.305s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.305s] compilation terminated.
+[1.306s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:90: CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o] Error 1
+[1.306s] gmake[2]: *** Waiting for unfinished jobs....
+[1.307s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_py[0m
+[1.308s] [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kcommon/ros2_sport_client.h: No such file or directory
+[1.308s]     4 | #include [01;31m[K"common/ros2_sport_client.h"[m[K
+[1.308s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.309s] compilation terminated.
+[1.309s] gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:90: CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o] Error 1
+[1.309s] gmake[2]: *** Waiting for unfinished jobs....
+[1.320s] In file included from [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:1[m[K:
+[1.320s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:78:80:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+[1.320s]    78 | #define REGISTER_ALGORITHM(ClassName, InputType)                               \
+[1.320s]       |                                                                                 
+[1.327s] [ 77%] Built target acre_ctrl__rosidl_generator_py
+[1.338s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c__pyext[0m
+[1.339s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c__pyext[0m
+[1.339s] [35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.356s] [ 92%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[1.356s] [ 92%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[1.356s] [ 92%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[1.421s] running egg_info
+[1.421s] writing acre_ctrl.egg-info/PKG-INFO
+[1.421s] writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+[1.421s] writing top-level names to acre_ctrl.egg-info/top_level.txt
+[1.423s] reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[1.424s] writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[1.451s] [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:[m[K In member function ‘[01m[Kvirtual ControlOutput SpinSample::compute(const void*)[m[K’:
+[1.451s] [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:8:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kraw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.451s]     8 |     ControlOutput compute([01;35m[Kconst void* raw[m[K) override {
+[1.452s]       |                           [01;35m[K~~~~~~~~~~~~^~~[m[K
+[1.452s] In file included from [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:1[m[K:
+[1.452s] [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:[m[K In function ‘[01m[Kvoid* algo_create()[m[K’:
+[1.452s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:82:60:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[KControlAlgorithm[m[K’
+[1.452s]    82 |         void* algo_create()  { return new ControlAlgorithm([01;31m[K)[m[K; }                \
+[1.452s]       |                                                            [01;31m[K^[m[K
+[1.452s] [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:13:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREGISTER_ALGORITHM[m[K’
+[1.452s]    13 | [01;36m[KREGISTER_ALGORITHM[m[K(SpinSample, PointInput)
+[1.452s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.452s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:71:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[KControlAlgorithm[m[K’:
+[1.453s]    71 | class [01;36m[KControlAlgorithm[m[K {
+[1.453s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.453s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:75:27:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual ControlOutput ControlAlgorithm::compute(const void*)[m[K’
+[1.453s]    75 |     virtual ControlOutput [01;36m[Kcompute[m[K(const void* input) = 0;
+[1.453s]       |                           [01;36m[K^~~~~~~[m[K
+[1.453s] [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:[m[K In function ‘[01m[KControlOutput algo_compute(void*, const void*)[m[K’:
+[1.453s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:89:17:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst PointInput[m[K’ to ‘[01m[Kconst void*[m[K’
+[1.453s]    89 |                 [01;31m[K*static_cast<const InputType*>(input)[m[K); }                      \
+[1.453s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.453s]       |                 [01;31m[K|[m[K
+[1.453s]       |                 [01;31m[Kconst PointInput[m[K
+[1.454s] [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:13:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREGISTER_ALGORITHM[m[K’
+[1.454s]    13 | [01;36m[KREGISTER_ALGORITHM[m[K(SpinSample, PointInput)
+[1.454s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.454s] [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:8:39:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual ControlOutput SpinSample::compute(const void*)[m[K’
+[1.454s]     8 |     ControlOutput compute([01;36m[Kconst void* raw[m[K) override {
+[1.454s]       |                           [01;36m[K~~~~~~~~~~~~^~~[m[K
+[1.455s] [ 92%] Built target ament_cmake_python_build_acre_ctrl_egg
+[1.477s] gmake[2]: *** [CMakeFiles/spin_sample.dir/build.make:76: CMakeFiles/spin_sample.dir/src/algo/spin_sample.cpp.o] Error 1
+[1.477s] gmake[1]: *** [CMakeFiles/Makefile2:673: CMakeFiles/spin_sample.dir/all] Error 2
+[1.477s] gmake[1]: *** Waiting for unfinished jobs....
+[1.669s] In file included from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:2[m[K,
+[1.669s]                  from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[1.669s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:78:80:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+[1.670s]    78 | #define REGISTER_ALGORITHM(ClassName, InputType)                               \
+[1.670s]       |                                                                                 
+[1.673s] In file included from [01m[K/usr/include/pybind11/pytypes.h:12[m[K,
+[1.673s]                  from [01m[K/usr/include/pybind11/cast.h:13[m[K,
+[1.674s]                  from [01m[K/usr/include/pybind11/attr.h:13[m[K,
+[1.674s]                  from [01m[K/usr/include/pybind11/pybind11.h:13[m[K,
+[1.674s]                  from [01m[K/usr/include/pybind11/embed.h:12[m[K,
+[1.674s]                  from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:3[m[K,
+[1.674s]                  from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[1.674s] [01m[K/usr/include/pybind11/detail/common.h:215:10:[m[K [01;31m[Kfatal error: [m[KPython.h: No such file or directory
+[1.674s]   215 | #include [01;31m[K<Python.h>[m[K
+[1.674s]       |          [01;31m[K^~~~~~~~~~[m[K
+[1.674s] compilation terminated.
+[1.678s] gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:76: CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o] Error 1
+[1.678s] gmake[1]: *** [CMakeFiles/Makefile2:645: CMakeFiles/point_control_node.dir/all] Error 2
+[1.716s] In file included from [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:10[m[K:
+[1.716s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Kpatch.hpp: No such file or directory
+[1.716s]    10 | #include [01;31m[K"patch.hpp"[m[K
+[1.716s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[1.716s] compilation terminated.
+[1.720s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+[1.721s] gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+[1.721s] gmake: *** [Makefile:146: all] Error 2
+[1.724s] Invoked command in '/workspace/build/acre_ctrl' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16

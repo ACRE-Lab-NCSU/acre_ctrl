@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.001107] (acre_ctrl) JobQueued: {'identifier': 'acre_ctrl', 'dependencies': OrderedDict()}
+[0.001246] (acre_ctrl) JobStarted: {'identifier': 'acre_ctrl'}
+[0.020658] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'cmake'}
+[0.021778] (acre_ctrl) JobProgress: {'identifier': 'acre_ctrl', 'progress': 'build'}
+[0.022815] (acre_ctrl) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/acre_ctrl', '--', '-j16', '-l16'], 'cwd': '/workspace/build/acre_ctrl', 'env': OrderedDict([('HOSTNAME', 'fedora'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/install/acre_ctrl/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="enp1s0f0"/></Interfaces></General></Domain></CycloneDDS>'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/workspace/install:/opt/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble'), ('PWD', '/workspace/build/acre_ctrl'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspace/install/acre_ctrl/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/local/lib/python3.10/dist-packages:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/acre_ctrl:/opt/unitree_ros2/cyclonedds_ws/install/unitree_hg:/opt/unitree_ros2/cyclonedds_ws/install/unitree_go:/opt/unitree_ros2/cyclonedds_ws/install/unitree_api:/opt/ros/humble')]), 'shell': False}
+[0.099452] (-) TimerEvent: {}
+[0.133333] (acre_ctrl) StdoutLine: {'line': b'[  5%] Built target acre_ctrl__rs\n'}
+[0.133757] (acre_ctrl) StdoutLine: {'line': b'[  5%] Built target acre_ctrl__cpp\n'}
+[0.134074] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target acre_ctrl__rosidl_generator_c\n'}
+[0.153452] (acre_ctrl) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_acre_ctrl\n'}
+[0.175637] (acre_ctrl) StdoutLine: {'line': b'[ 20%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp\n'}
+[0.176507] (acre_ctrl) StdoutLine: {'line': b'[ 30%] Built target acre_ctrl__rosidl_typesupport_cpp\n'}
+[0.176724] (acre_ctrl) StdoutLine: {'line': b'[ 35%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp\n'}
+[0.197867] (acre_ctrl) StdoutLine: {'line': b'[ 42%] Built target acre_ctrl__rosidl_typesupport_introspection_c\n'}
+[0.198208] (acre_ctrl) StdoutLine: {'line': b'[ 50%] Built target acre_ctrl__rosidl_typesupport_c\n'}
+[0.198419] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c\n'}
+[0.199517] (-) TimerEvent: {}
+[0.240208] (acre_ctrl) StdoutLine: {'line': b'[ 57%] Built target acre_ctrl\n'}
+[0.281325] (acre_ctrl) StdoutLine: {'line': b'[ 60%] Built target acre_ctrl__py\n'}
+[0.283742] (acre_ctrl) StdoutLine: {'line': b'[ 65%] Built target spin_sample\n'}
+[0.295560] (acre_ctrl) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o\x1b[0m\n'}
+[0.297133] (acre_ctrl) StdoutLine: {'line': b'[ 75%] Built target point_control_node\n'}
+[0.299639] (-) TimerEvent: {}
+[0.328252] (acre_ctrl) StdoutLine: {'line': b'[ 80%] Built target acre_ctrl__rosidl_generator_py\n'}
+[0.372918] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.373295] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target acre_ctrl__rosidl_typesupport_c__pyext\n'}
+[0.373546] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext\n'}
+[0.399829] (-) TimerEvent: {}
+[0.500329] (-) TimerEvent: {}
+[0.522391] (acre_ctrl) StdoutLine: {'line': b'running egg_info\n'}
+[0.523517] (acre_ctrl) StdoutLine: {'line': b'writing acre_ctrl.egg-info/PKG-INFO\n'}
+[0.523947] (acre_ctrl) StdoutLine: {'line': b'writing dependency_links to acre_ctrl.egg-info/dependency_links.txt\n'}
+[0.524158] (acre_ctrl) StdoutLine: {'line': b'writing top-level names to acre_ctrl.egg-info/top_level.txt\n'}
+[0.527082] (acre_ctrl) StdoutLine: {'line': b"reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[0.528264] (acre_ctrl) StdoutLine: {'line': b"writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'\n"}
+[0.573134] (acre_ctrl) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_acre_ctrl_egg\n'}
+[0.600532] (-) TimerEvent: {}
+[0.701075] (-) TimerEvent: {}
+[0.801552] (-) TimerEvent: {}
+[0.902072] (-) TimerEvent: {}
+[1.002582] (-) TimerEvent: {}
+[1.103111] (-) TimerEvent: {}
+[1.203505] (-) TimerEvent: {}
+[1.303964] (-) TimerEvent: {}
+[1.404456] (-) TimerEvent: {}
+[1.505021] (-) TimerEvent: {}
+[1.605519] (-) TimerEvent: {}
+[1.705931] (-) TimerEvent: {}
+[1.806347] (-) TimerEvent: {}
+[1.906915] (-) TimerEvent: {}
+[2.007327] (-) TimerEvent: {}
+[2.107727] (-) TimerEvent: {}
+[2.208127] (-) TimerEvent: {}
+[2.308520] (-) TimerEvent: {}
+[2.408941] (-) TimerEvent: {}
+[2.509365] (-) TimerEvent: {}
+[2.609835] (-) TimerEvent: {}
+[2.710248] (-) TimerEvent: {}
+[2.810678] (-) TimerEvent: {}
+[2.911086] (-) TimerEvent: {}
+[3.011478] (-) TimerEvent: {}
+[3.111876] (-) TimerEvent: {}
+[3.212270] (-) TimerEvent: {}
+[3.312658] (-) TimerEvent: {}
+[3.413048] (-) TimerEvent: {}
+[3.513371] (-) TimerEvent: {}
+[3.613786] (-) TimerEvent: {}
+[3.714192] (-) TimerEvent: {}
+[3.799670] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Go2SportClientNode::start_sequence(std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Request_<std::allocator<void> > >, std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.799879] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:85:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.799962] (acre_ctrl) StderrLine: {'line': b'   85 |         sport_client_.Move(req, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0f, 0.5f);\n'}
+[3.800031] (acre_ctrl) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.800131] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:85:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.800270] (acre_ctrl) StderrLine: {'line': b'   85 |         sport_client_.Move(req, 0f, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0.5f);\n'}
+[3.800407] (acre_ctrl) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.800538] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:86:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.800671] (acre_ctrl) StderrLine: {'line': b'   86 |         sport_client_.Move(req, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0f, 0.5f);\n'}
+[3.800813] (acre_ctrl) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.800941] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:86:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.801070] (acre_ctrl) StderrLine: {'line': b'   86 |         sport_client_.Move(req, 0f, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0.5f);\n'}
+[3.801202] (acre_ctrl) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.801313] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:87:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.801377] (acre_ctrl) StderrLine: {'line': b'   87 |         sport_client_.Move(req, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0f, 0.5f);\n'}
+[3.801438] (acre_ctrl) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.801499] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:87:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.801561] (acre_ctrl) StderrLine: {'line': b'   87 |         sport_client_.Move(req, 0f, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0.5f);\n'}
+[3.801622] (acre_ctrl) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.801692] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:88:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.801778] (acre_ctrl) StderrLine: {'line': b'   88 |         sport_client_.Move(req, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0f, 0.5f);\n'}
+[3.801847] (acre_ctrl) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.801907] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:88:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.801979] (acre_ctrl) StderrLine: {'line': b'   88 |         sport_client_.Move(req, 0f, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0.5f);\n'}
+[3.802055] (acre_ctrl) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.802152] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:89:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.802229] (acre_ctrl) StderrLine: {'line': b'   89 |         sport_client_.Move(req, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0f, 0.5f);\n'}
+[3.802311] (acre_ctrl) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.802380] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:89:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.802441] (acre_ctrl) StderrLine: {'line': b'   89 |         sport_client_.Move(req, 0f, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0.5f);\n'}
+[3.802503] (acre_ctrl) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.802563] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:90:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.802624] (acre_ctrl) StderrLine: {'line': b'   90 |         sport_client_.Move(req, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0f, 0.5f);\n'}
+[3.802694] (acre_ctrl) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.802765] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:90:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.802828] (acre_ctrl) StderrLine: {'line': b'   90 |         sport_client_.Move(req, 0f, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0.5f);\n'}
+[3.802888] (acre_ctrl) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.802952] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:91:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.803023] (acre_ctrl) StderrLine: {'line': b'   91 |         sport_client_.Move(req, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0f, 0.5f);\n'}
+[3.803101] (acre_ctrl) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.803161] (acre_ctrl) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:91:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.803244] (acre_ctrl) StderrLine: {'line': b'   91 |         sport_client_.Move(req, 0f, \x1b[01;31m\x1b[K0f\x1b[m\x1b[K, 0.5f);\n'}
+[3.803304] (acre_ctrl) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.814325] (-) TimerEvent: {}
+[3.914747] (-) TimerEvent: {}
+[4.015147] (-) TimerEvent: {}
+[4.115542] (-) TimerEvent: {}
+[4.215940] (-) TimerEvent: {}
+[4.316261] (-) TimerEvent: {}
+[4.416653] (-) TimerEvent: {}
+[4.517062] (-) TimerEvent: {}
+[4.617444] (-) TimerEvent: {}
+[4.717818] (-) TimerEvent: {}
+[4.818212] (-) TimerEvent: {}
+[4.918585] (-) TimerEvent: {}
+[5.019011] (-) TimerEvent: {}
+[5.119398] (-) TimerEvent: {}
+[5.219794] (-) TimerEvent: {}
+[5.320173] (-) TimerEvent: {}
+[5.420559] (-) TimerEvent: {}
+[5.520979] (-) TimerEvent: {}
+[5.621402] (-) TimerEvent: {}
+[5.721790] (-) TimerEvent: {}
+[5.822169] (-) TimerEvent: {}
+[5.922548] (-) TimerEvent: {}
+[6.022950] (-) TimerEvent: {}
+[6.123345] (-) TimerEvent: {}
+[6.223733] (-) TimerEvent: {}
+[6.324140] (-) TimerEvent: {}
+[6.424523] (-) TimerEvent: {}
+[6.524911] (-) TimerEvent: {}
+[6.625288] (-) TimerEvent: {}
+[6.725667] (-) TimerEvent: {}
+[6.826066] (-) TimerEvent: {}
+[6.926441] (-) TimerEvent: {}
+[7.026821] (-) TimerEvent: {}
+[7.079977] (acre_ctrl) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1\n'}
+[7.080430] (acre_ctrl) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2\n'}
+[7.080834] (acre_ctrl) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.083366] (acre_ctrl) CommandEnded: {'returncode': 2}
+[7.094860] (acre_ctrl) JobEnded: {'identifier': 'acre_ctrl', 'rc': 2}
+[7.105817] (-) EventReactorShutdown: {}

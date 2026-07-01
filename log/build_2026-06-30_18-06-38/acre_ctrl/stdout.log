@@ -1,0 +1,74 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found unitree_go: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+-- Found unitree_api: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+-- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /workspace/src/acre_ctrl/include/acre_ctrl
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/build/acre_ctrl
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_c[0m
+[  2%] Built target acre_ctrl__rs
+[  5%] Built target acre_ctrl__cpp
+[ 12%] Built target acre_ctrl__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c[0m
+[ 27%] Built target acre_ctrl__rosidl_typesupport_c
+[ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[ 35%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[ 42%] Built target acre_ctrl__rosidl_typesupport_cpp
+[ 50%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[ 57%] Built target acre_ctrl
+[35m[1mConsolidate compiler generated dependencies of target spin_sample[0m
+[ 67%] Built target acre_ctrl__py
+[ 67%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/spin_sample.dir/src/algo/spin_sample.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_py[0m
+[ 77%] Built target acre_ctrl__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 92%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[ 92%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[ 92%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing acre_ctrl.egg-info/PKG-INFO
+writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+writing top-level names to acre_ctrl.egg-info/top_level.txt
+reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[ 92%] Built target ament_cmake_python_build_acre_ctrl_egg

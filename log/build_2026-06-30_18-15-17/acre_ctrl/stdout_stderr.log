@@ -1,0 +1,150 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found unitree_go: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+-- Found unitree_api: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+-- Found pybind11: /usr/include (found version "2.9.1")
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:41 (rosidl_target_interfaces)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (rosidl_target_interfaces)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:58 (rosidl_target_interfaces)
+
+[0m
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /workspace/src/acre_ctrl/include/acre_ctrl
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/build/acre_ctrl
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_c[0m
+[  5%] Built target acre_ctrl__cpp
+[  5%] Built target acre_ctrl__rs
+[ 12%] Built target acre_ctrl__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_cpp[0m
+[ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[ 27%] Built target acre_ctrl__rosidl_typesupport_c
+[ 35%] Built target acre_ctrl__rosidl_typesupport_cpp
+[ 42%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[ 57%] Built target acre_ctrl
+[35m[1mConsolidate compiler generated dependencies of target spin_sample[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o[0m
+[ 70%] Built target acre_ctrl__py
+[ 72%] [32mBuilding CXX object CMakeFiles/spin_sample.dir/src/algo/spin_sample.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_generator_py[0m
+In file included from [01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:1[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:79:83:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+   79 | #define REGISTER_ALGORITHM(ClassName, InputType)                                  \
+      |                                                                                    
+[ 77%] Built target acre_ctrl__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target acre_ctrl__rosidl_typesupport_c__pyext[0m
+[ 87%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[ 87%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[ 92%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+running egg_info
+writing acre_ctrl.egg-info/PKG-INFO
+writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+writing top-level names to acre_ctrl.egg-info/top_level.txt
+reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:[m[K In member function ‘[01m[Kvirtual ControlOutput SpinSample::compute(const void*)[m[K’:
+[01m[K/workspace/src/acre_ctrl/src/algo/spin_sample.cpp:8:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kraw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    8 |     ControlOutput compute([01;35m[Kconst void* raw[m[K) override {
+      |                           [01;35m[K~~~~~~~~~~~~^~~[m[K
+[ 92%] Built target ament_cmake_python_build_acre_ctrl_egg
+[ 95%] [32m[1mLinking CXX executable spin_sample[0m
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/spin_sample.dir/build.make:192: spin_sample] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:673: CMakeFiles/spin_sample.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:2[m[K,
+                 from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:79:83:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+   79 | #define REGISTER_ALGORITHM(ClassName, InputType)                                  \
+      |                                                                                    
+In file included from [01m[K/usr/include/pybind11/pytypes.h:12[m[K,
+                 from [01m[K/usr/include/pybind11/cast.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/attr.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/pybind11.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/embed.h:12[m[K,
+                 from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:3[m[K,
+                 from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[01m[K/usr/include/pybind11/detail/common.h:215:10:[m[K [01;31m[Kfatal error: [m[KPython.h: No such file or directory
+  215 | #include [01;31m[K<Python.h>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:76: CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Kpatch.hpp: No such file or directory
+   10 | #include [01;31m[K"patch.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Kpatch.hpp: No such file or directory
+   10 | #include [01;31m[K"patch.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:90: CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:10[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:10:10:[m[K [01;31m[Kfatal error: [m[Kpatch.hpp: No such file or directory
+   10 | #include [01;31m[K"patch.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:90: CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:645: CMakeFiles/point_control_node.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

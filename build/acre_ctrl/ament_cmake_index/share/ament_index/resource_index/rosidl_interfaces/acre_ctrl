@@ -1,0 +1,4 @@
+srv/Go2StartSequence.idl
+srv/Go2StartSequence.srv
+srv/Go2StartSequence_Request.msg
+srv/Go2StartSequence_Response.msg

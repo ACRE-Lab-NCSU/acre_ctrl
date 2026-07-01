@@ -1,0 +1,29 @@
+[  5%] Built target acre_ctrl__cpp
+[  5%] Built target acre_ctrl__rs
+[ 12%] Built target acre_ctrl__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[ 20%] Built target acre_ctrl__rosidl_typesupport_c
+[ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[ 35%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[ 42%] Built target acre_ctrl__rosidl_typesupport_cpp
+[ 50%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target acre_ctrl
+[35m[1mConsolidate compiler generated dependencies of target spin_sample[0m
+[ 67%] Built target acre_ctrl__py
+[ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/spin_sample.dir/src/algo/spin_sample.cpp.o[0m
+[ 77%] Built target acre_ctrl__rosidl_generator_py
+[ 82%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[ 87%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[ 92%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing acre_ctrl.egg-info/PKG-INFO
+writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+writing top-level names to acre_ctrl.egg-info/top_level.txt
+reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[ 92%] Built target ament_cmake_python_build_acre_ctrl_egg

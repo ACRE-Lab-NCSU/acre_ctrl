@@ -1,0 +1,61 @@
+[0.023s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[0.138s] [  2%] Built target acre_ctrl__rs
+[0.139s] [ 10%] Built target acre_ctrl__rosidl_generator_c
+[0.139s] [ 12%] Built target acre_ctrl__cpp
+[0.160s] [ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[0.183s] [ 42%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[0.184s] [ 42%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[0.184s] [ 42%] Built target acre_ctrl__rosidl_typesupport_c
+[0.184s] [ 42%] Built target acre_ctrl__rosidl_typesupport_cpp
+[0.184s] [ 50%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[0.211s] [ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[0.258s] [ 57%] Built target acre_ctrl
+[0.305s] [ 60%] Built target acre_ctrl__py
+[0.306s] [ 65%] Built target spin_sample
+[0.319s] [ 72%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o[0m
+[0.320s] [ 72%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o[0m
+[0.320s] [ 72%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[0.358s] [ 77%] Built target acre_ctrl__rosidl_generator_py
+[0.407s] [ 87%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[0.407s] [ 87%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[0.407s] [ 92%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[0.556s] running egg_info
+[0.557s] writing acre_ctrl.egg-info/PKG-INFO
+[0.557s] writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+[0.558s] writing top-level names to acre_ctrl.egg-info/top_level.txt
+[0.561s] reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.562s] writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.622s] [ 92%] Built target ament_cmake_python_build_acre_ctrl_egg
+[3.689s] In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[3.689s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.689s]    98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req)
+[3.689s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[3.690s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.690s]    98 |   void SportClient::Agile(unitree_api::msg::Request &req[01;31m[K)[m[K
+[3.690s]       |                                                         [01;31m[K^[m[K
+[3.690s]       |                                                          [32m[K;[m[K
+[3.701s] In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[3.701s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.701s]    98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req)
+[3.702s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[3.702s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.702s]    98 |   void SportClient::Agile(unitree_api::msg::Request &req[01;31m[K)[m[K
+[3.702s]       |                                                         [01;31m[K^[m[K
+[3.702s]       |                                                          [32m[K;[m[K
+[3.747s] In file included from [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:10[m[K:
+[3.747s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.747s]    98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req)
+[3.748s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[3.748s] [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.748s]    98 |   void SportClient::Agile(unitree_api::msg::Request &req[01;31m[K)[m[K
+[3.748s]       |                                                         [01;31m[K^[m[K
+[3.748s]       |                                                          [32m[K;[m[K
+[6.455s] gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:90: CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o] Error 1
+[6.456s] gmake[1]: *** [CMakeFiles/Makefile2:645: CMakeFiles/point_control_node.dir/all] Error 2
+[6.456s] gmake[1]: *** Waiting for unfinished jobs....
+[6.456s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:90: CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o] Error 1
+[6.456s] gmake[2]: *** Waiting for unfinished jobs....
+[7.359s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+[7.359s] gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+[7.359s] gmake: *** [Makefile:146: all] Error 2
+[7.363s] Invoked command in '/workspace/build/acre_ctrl' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16

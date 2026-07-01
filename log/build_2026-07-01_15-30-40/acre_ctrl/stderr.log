@@ -1,0 +1,19 @@
+In file included from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:2[m[K,
+                 from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:79:83:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+   79 | #define REGISTER_ALGORITHM(ClassName, InputType)                                  \
+      |                                                                                    
+[01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:[m[K In member function ‘[01m[Kvoid Go2SportClientNode::stop_sequence()[m[K’:
+[01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:99:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq_[m[K’ was not declared in this scope; did you mean ‘[01m[Kreq[m[K’?
+   99 |         sport_client_.SwitchJoystick([01;31m[Kreq_[m[K, true);
+      |                                      [01;31m[K^~~~[m[K
+      |                                      [32m[Kreq[m[K
+In file included from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:[m[K In member function ‘[01m[Kvoid AlgorithmRunner::load_python(const string&)[m[K’:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:62:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   62 |     void load_python([01;35m[Kconst std::string& path[m[K) {
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

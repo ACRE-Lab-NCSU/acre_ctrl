@@ -1,4 +1,4 @@
-#include "algorithm_base.hpp"
+#include "algo/algorithm_base.hpp"
 #include <cmath>
 
 class SpinSample : public ControlAlgorithm {

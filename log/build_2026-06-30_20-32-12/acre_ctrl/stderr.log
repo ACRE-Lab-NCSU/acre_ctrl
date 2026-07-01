@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

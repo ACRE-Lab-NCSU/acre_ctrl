@@ -1,1 +1,1 @@
-ament_lint_auto;ament_lint_common
+rclcpp;geometry_msgs;unitree_go;unitree_api;rosidl_default_runtime;ament_lint_auto;ament_lint_common

@@ -1,0 +1,31 @@
+[0.012s] Invoking command in '/workspace/build/acre_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16
+[0.075s] [  7%] Built target acre_ctrl__rs
+[0.075s] [  7%] Built target acre_ctrl__cpp
+[0.075s] [ 12%] Built target acre_ctrl__rosidl_generator_c
+[0.087s] [ 12%] Built target ament_cmake_python_copy_acre_ctrl
+[0.100s] [ 27%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[0.100s] [ 27%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[0.100s] [ 35%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[0.101s] [ 42%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[0.102s] [ 50%] Built target acre_ctrl__rosidl_typesupport_c
+[0.103s] [ 57%] Built target acre_ctrl__rosidl_typesupport_cpp
+[0.130s] [ 57%] Built target acre_ctrl
+[0.156s] [ 60%] Built target acre_ctrl__py
+[0.156s] [ 65%] Built target spin_sample
+[0.163s] [ 70%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[0.163s] [ 75%] Built target point_control_node
+[0.185s] [ 80%] Built target acre_ctrl__rosidl_generator_py
+[0.211s] [ 95%] Built target acre_ctrl__rosidl_typesupport_introspection_c__pyext
+[0.211s] [ 95%] Built target acre_ctrl__rosidl_typesupport_c__pyext
+[0.211s] [ 95%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c__pyext
+[0.282s] running egg_info
+[0.282s] writing acre_ctrl.egg-info/PKG-INFO
+[0.282s] writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+[0.282s] writing top-level names to acre_ctrl.egg-info/top_level.txt
+[0.284s] reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.284s] writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[0.310s] [ 95%] Built target ament_cmake_python_build_acre_ctrl_egg
+[0.556s] gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Interrupt
+[0.556s] gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Interrupt
+[0.556s] gmake: *** [Makefile:146: all] Interrupt
+[0.559s] Invoked command in '/workspace/build/acre_ctrl' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/acre_ctrl -- -j16 -l16

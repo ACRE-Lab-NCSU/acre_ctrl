@@ -10,6 +10,7 @@
 #include "patch.hpp"
 #include "unitree_api/msg/request.hpp"
 #include "unitree_api/msg/response.hpp"
+const int32_t ROBOT_SPORT_API_ID_AGILE = 100;
 const int32_t ROBOT_SPORT_API_ID_DAMP = 1001;
 const int32_t ROBOT_SPORT_API_ID_BALANCESTAND = 1002;
 const int32_t ROBOT_SPORT_API_ID_STOPMOVE = 1003;
@@ -93,6 +94,8 @@ class SportClient {
     req_suber_.reset();
     return js;
   }
+
+  void Agile(unitree_api::msg::Request &req);
 
   /*
    * @brief Damp

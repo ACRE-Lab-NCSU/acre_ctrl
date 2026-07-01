@@ -1,0 +1,86 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found unitree_go: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+-- Found unitree_api: 0.0.0 (/opt/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /workspace/src/acre_ctrl/include/acre_ctrl
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/build/acre_ctrl
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  7%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[  7%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  7%] Built target ament_cmake_python_copy_acre_ctrl
+[  7%] Built target acre_ctrl__rs
+running egg_info
+creating acre_ctrl.egg-info
+writing acre_ctrl.egg-info/PKG-INFO
+writing dependency_links to acre_ctrl.egg-info/dependency_links.txt
+writing top-level names to acre_ctrl.egg-info/top_level.txt
+writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+reading manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+writing manifest file 'acre_ctrl.egg-info/SOURCES.txt'
+[  7%] Built target acre_ctrl__cpp
+[ 10%] [32mBuilding C object CMakeFiles/acre_ctrl__rosidl_generator_c.dir/rosidl_generator_c/acre_ctrl/srv/detail/go2_start_sequence__functions.c.o[0m
+[ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 17%] Built target ament_cmake_python_build_acre_ctrl_egg
+[ 20%] [32m[1mLinking C shared library libacre_ctrl__rosidl_generator_c.so[0m
+[ 20%] Built target acre_ctrl__rosidl_generator_c
+[ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/acre_ctrl__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/acre_ctrl/srv/go2_start_sequence__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/acre_ctrl__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/acre_ctrl/srv/detail/go2_start_sequence__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/acre_ctrl__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/acre_ctrl/srv/detail/dds_fastrtps/go2_start_sequence__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/acre_ctrl__rosidl_typesupport_c.dir/rosidl_typesupport_c/acre_ctrl/srv/go2_start_sequence__type_support.cpp.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/acre_ctrl__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/acre_ctrl/srv/detail/go2_start_sequence__type_support.c.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/acre_ctrl__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/acre_ctrl/srv/detail/go2_start_sequence__type_support_c.cpp.o[0m
+[ 45%] [32m[1mLinking CXX shared library libacre_ctrl__rosidl_typesupport_c.so[0m
+[ 47%] [32m[1mLinking C shared library libacre_ctrl__rosidl_typesupport_introspection_c.so[0m
+[ 47%] Built target acre_ctrl__rosidl_typesupport_c
+[ 47%] Built target acre_ctrl__rosidl_typesupport_introspection_c
+[ 50%] [32m[1mLinking CXX shared library libacre_ctrl__rosidl_typesupport_cpp.so[0m
+[ 50%] Built target acre_ctrl__rosidl_typesupport_cpp
+[ 52%] [32m[1mLinking CXX shared library libacre_ctrl__rosidl_typesupport_introspection_cpp.so[0m
+[ 55%] [32m[1mLinking CXX shared library libacre_ctrl__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 55%] Built target acre_ctrl__rosidl_typesupport_introspection_cpp
+[ 57%] [32m[1mLinking CXX shared library libacre_ctrl__rosidl_typesupport_fastrtps_c.so[0m
+[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target acre_ctrl__rosidl_typesupport_fastrtps_c
+[ 57%] Built target acre_ctrl
+[ 72%] [32mBuilding CXX object CMakeFiles/spin_sample.dir/src/algo/spin_sample.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o[0m
+[ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o[0m
+[ 72%] Built target acre_ctrl__py

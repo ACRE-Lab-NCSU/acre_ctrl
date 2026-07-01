@@ -1,0 +1,7 @@
+[01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:[m[K In member function ‘[01m[Kvoid Go2SportClientNode::start_sequence(std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Request_<std::allocator<void> > >, std::shared_ptr<acre_ctrl::srv::Go2StartSequence_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:74:36:[m[K [01;31m[Kerror: [m[K‘[01m[KAgile[m[K’ was not declared in this scope
+   74 |         sport_client_.BalanceStand([01;31m[KAgile[m[K);       // balanced standing -> Agile
+      |                                    [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

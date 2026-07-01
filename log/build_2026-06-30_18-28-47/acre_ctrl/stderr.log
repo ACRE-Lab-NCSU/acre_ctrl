@@ -1,0 +1,20 @@
+In file included from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:2[m[K,
+                 from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_base.hpp:79:83:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+   79 | #define REGISTER_ALGORITHM(ClassName, InputType)                                  \
+      |                                                                                    
+In file included from [01m[K/usr/include/pybind11/pytypes.h:12[m[K,
+                 from [01m[K/usr/include/pybind11/cast.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/attr.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/pybind11.h:13[m[K,
+                 from [01m[K/usr/include/pybind11/embed.h:12[m[K,
+                 from [01m[K/workspace/src/acre_ctrl/include/acre_ctrl/algo/algorithm_runner.hpp:3[m[K,
+                 from [01m[K/workspace/src/acre_ctrl/src/ctrl/point_control_node.cpp:8[m[K:
+[01m[K/usr/include/pybind11/detail/common.h:215:10:[m[K [01;31m[Kfatal error: [m[KPython.h: No such file or directory
+  215 | #include [01;31m[K<Python.h>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:76: CMakeFiles/point_control_node.dir/src/ctrl/point_control_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:645: CMakeFiles/point_control_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

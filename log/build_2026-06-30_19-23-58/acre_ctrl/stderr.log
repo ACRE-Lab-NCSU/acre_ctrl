@@ -1,0 +1,20 @@
+In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+   98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req);
+      |        [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/workspace/src/acre_ctrl/src/common/ros2_sport_client.cpp:4[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+   98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req);
+      |        [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/workspace/src/acre_ctrl/src/common/sportmode_driver.cpp:10[m[K:
+[01m[K/workspace/src/acre_ctrl/include/acre_ctrl/common/ros2_sport_client.hpp:98:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KSportClient::[m[K’ on member ‘[01m[KAgile[m[K’ [[01;31m[K-fpermissive[m[K]
+   98 |   void [01;31m[KSportClient[m[K::Agile(unitree_api::msg::Request &req);
+      |        [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/point_control_node.dir/build.make:90: CMakeFiles/point_control_node.dir/src/common/ros2_sport_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:645: CMakeFiles/point_control_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:90: CMakeFiles/sportmode_driver.dir/src/common/ros2_sport_client.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/sportmode_driver.dir/build.make:76: CMakeFiles/sportmode_driver.dir/src/common/sportmode_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:617: CMakeFiles/sportmode_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

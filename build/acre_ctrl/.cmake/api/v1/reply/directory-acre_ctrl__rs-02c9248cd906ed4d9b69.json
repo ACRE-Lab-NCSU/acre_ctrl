@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "acre_ctrl__rs",
+		"source" : "/workspace/build/acre_ctrl/acre_ctrl__rs"
+	}
+}
