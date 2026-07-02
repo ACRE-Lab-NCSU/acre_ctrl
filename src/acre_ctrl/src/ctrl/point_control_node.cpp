@@ -111,7 +111,7 @@ private:
     }
 
     // Parameters
-    double      frequency_ = 10.0;
+    double      frequency_;
     std::string algo_path_;
 
     // State

@@ -60,14 +60,6 @@ public:
             std::chrono::milliseconds(10),
             std::bind(&Go2SportClientNode::publish_odom, this));
 
-        /**
-        // Check that the starting state if the robot is damped
-        if (state_.error_code != 1001) {
-            RCLCPP_FATAL(this->get_logger(), "Fatal Error: Please put the Go2 in the DAMPED mode using L2 + B.");
-            rclcpp::shutdown();
-            std::exit(EXIT_FAILURE);
-        }
-        */
         RCLCPP_INFO(this->get_logger(), "Go2 connected, waiting for controller...");
     }
 

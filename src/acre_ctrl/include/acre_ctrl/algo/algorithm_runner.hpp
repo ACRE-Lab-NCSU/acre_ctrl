@@ -1,10 +1,12 @@
 #pragma once
 #include "algorithm_base.hpp"
+#include "component_registry.hpp"
 #include <pybind11/embed.h>
-#include <dlfcn.h>
-#include <stdexcept>
-#include <functional>
+#include <pybind11/stl.h>
+#include <memory>
 #include <string>
+#include <stdexcept>
+#include <filesystem>
 
 namespace py = pybind11;
 
@@ -12,65 +14,60 @@ class AlgorithmRunner {
 public:
     explicit AlgorithmRunner(const std::string& path)
     {
-        if (path.ends_with(".so"))      load_cpp(path);
-        else if (path.ends_with(".py")) load_python(path);
-        else throw std::runtime_error("Unsupported file type: " + path);
+        if (!path.ends_with(".py"))
+            throw std::runtime_error(
+                "AlgorithmRunner only loads Python algorithms (.py). "
+                "For C++ algorithms write your own node.");
+
+        load_python(path);
     }
 
-    ~AlgorithmRunner() {
-        if (destroy_fn_ && instance_) destroy_fn_(instance_);
-        if (handle_) dlclose(handle_);
+    void init() {
+        instance_->attr("init")();
     }
 
-    AlgorithmInputType input_type() const { return input_type_; }
+    std::vector<std::string> required() const {
+        return instance_->attr("required")().cast<std::vector<std::string>>();
+    }
 
-    ControlOutput compute(const void* input) {
-        return compute_fn_(instance_, input);
+    ControlOutput compute(const ComponentRegistry& world) {
+        return instance_->attr("compute")(world).cast<ControlOutput>();
     }
 
 private:
-    void*              handle_   = nullptr;
-    void*              instance_ = nullptr;
-    AlgorithmInputType input_type_;
+    std::unique_ptr<py::object> instance_;
 
-    std::function<void(void*)>                    destroy_fn_;
-    std::function<ControlOutput(void*, const void*)> compute_fn_;
+    void load_python(const std::string& path)
+    {
+        namespace fs = std::filesystem;
 
-    void load_cpp(const std::string& path) {
-        handle_ = dlopen(path.c_str(), RTLD_LAZY);
-        if (!handle_) throw std::runtime_error(dlerror());
+        if (!Py_IsInitialized()) {
+            static py::scoped_interpreter interp{};
+        }
 
-        auto create   = (void*(*)())            dlsym(handle_, "algo_create");
-        auto destroy  = (void(*)(void*))        dlsym(handle_, "algo_destroy");
-        auto init     = (void(*)(void*))        dlsym(handle_, "algo_init");
-        auto compute  = (ControlOutput(*)(void*, const void*))
-                            dlsym(handle_, "algo_compute");
-        auto get_type = (uint32_t(*)())         dlsym(handle_, "algo_input_type");
+        std::string dir  = fs::path(path).parent_path().string();
+        std::string stem = fs::path(path).stem().string();
 
-        if (!create || !destroy || !compute || !get_type)
-            throw std::runtime_error("Missing required symbols in: " + path);
-
-        instance_   = create();
-        input_type_ = static_cast<AlgorithmInputType>(get_type());
-        destroy_fn_ = destroy;
-        compute_fn_ = [compute](void* p, const void* in) {
-            return compute(p, in);
-        };
-        if (init) init(instance_);
-    }
-
-    void load_python(const std::string& path) {
-        /**
-        py::scoped_interpreter guard{}; // Start the Python Interprtor
         py::module_ sys = py::module_::import("sys");
-        py::modeule_ algo = py::module_::import(path); // import the algorithm file at the given path
-        instance_ = algo.attr("init"); // Initlize the instance 
-        input_type_ = static_cast<AlgorithmInputType>(algo.attr("type"));
-        compute_fn_ = [compute](void* p, const void* in) {
-            return algo.attr("compute")(p, in);
-        };
-        */
+        sys.attr("path").attr("insert")(0, dir);
 
+        py::module_ mod = py::module_::import(stem.c_str());
+        py::object  base = py::module_::import("acre_ctrl_algorithm")
+                               .attr("ControlSystem");
 
+        // Find the ControlSystem subclass in the module
+        for (auto item : mod.attr("__dict__").cast<py::dict>()) {
+            py::object val = item.second.cast<py::object>();
+            if (py::isinstance<py::type>(val)  &&
+                val.attr("__name__").cast<std::string>() != "ControlSystem" &&
+                PyObject_IsSubclass(val.ptr(), base.ptr()))
+            {
+                instance_ = std::make_unique<py::object>(val());
+                return;
+            }
+        }
+
+        throw std::runtime_error(
+            "No ControlSystem subclass found in: " + path);
     }
 };
