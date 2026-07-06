@@ -33,9 +33,5 @@ class PathData:
 
 @dataclass
 class Action:
-    pass
-
-@dataclass
-class VelocityAction(Action):
     linear_vel:  float = 0.0
     angular_vel: float = 0.0
