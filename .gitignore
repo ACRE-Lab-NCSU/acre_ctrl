@@ -1,13 +1,7 @@
-# ==========================================
-# ROS2 Core Build and Log Directories
-# ==========================================
 build/
 install/
 log/
 
-# ==========================================
-# Python Artifacts (for rclpy/colcon setups)
-# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -17,9 +11,6 @@ dist/
 build_isolated/
 install_isolated/
 
-# ==========================================
-# C++ / CMake Artifacts
-# ==========================================
 .cmake/
 CMakeCache.txt
 CMakeFiles/
@@ -30,17 +21,11 @@ install_manifest.txt
 *.manifest
 *.spec
 
-# ==========================================
-# ROS & Gazebo Specifics
-# ==========================================
 *.dox
 *.wikidoc
 .geo
 *.dae.log
 
-# ==========================================
-# IDE & Environment Files (Optional but useful)
-# ==========================================
 .vscode/
 .idea/
 .qtcreator/

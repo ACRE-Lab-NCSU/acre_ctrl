@@ -6,7 +6,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include "geometry_msgs/msg/twist_stamped.hpp"
 #include <nav_msgs/msg/odometry.hpp>
-#include "acre_ctrl/srv/go2_start_sequence.hpp"
+#include "acre_ctrl_msgs/srv/go2_start_sequence.hpp"
 #include "common/ros2_sport_client.hpp"
 #include "unitree_go/msg/sport_mode_state.hpp"
 
@@ -47,14 +47,14 @@ public:
                 cmd_callback(msg);
             });
 
-        start_sequence_srv_ = this->create_service<acre_ctrl::srv::Go2StartSequence>(
+        start_sequence_srv_ = this->create_service<acre_ctrl_msgs::srv::Go2StartSequence>(
             START_SEQUENCE_SERVICE,
-            [this](std::shared_ptr<acre_ctrl::srv::Go2StartSequence::Request> request,
-                   std::shared_ptr<acre_ctrl::srv::Go2StartSequence::Response> response) {
+            [this](std::shared_ptr<acre_ctrl_msgs::srv::Go2StartSequence::Request> request,
+                   std::shared_ptr<acre_ctrl_msgs::srv::Go2StartSequence::Response> response) {
                 start_sequence(request, response);
             });
 
-        odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("acre/odom", 10);
+        odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("/sport_odom", 10);
 
         odom_timer_ = this->create_wall_timer(
             std::chrono::milliseconds(10),
@@ -64,8 +64,8 @@ public:
     }
 
     void start_sequence(
-        std::shared_ptr<acre_ctrl::srv::Go2StartSequence::Request> /*request*/,
-        std::shared_ptr<acre_ctrl::srv::Go2StartSequence::Response> response)
+        std::shared_ptr<acre_ctrl_msgs::srv::Go2StartSequence::Request> /*request*/,
+        std::shared_ptr<acre_ctrl_msgs::srv::Go2StartSequence::Response> response)
     {
         RCLCPP_INFO(this->get_logger(), "Controller connected, running startup sequence");
         unitree_api::msg::Request req;
@@ -139,7 +139,7 @@ private:
 
         nav_msgs::msg::Odometry msg;
         msg.header.stamp    = this->now();
-        msg.header.frame_id = "acre_odom";
+        msg.header.frame_id = "sport_odom";
         msg.child_frame_id  = "base_link";
 
         auto pos  = state_.position;
@@ -207,7 +207,7 @@ private:
     rclcpp::Subscription<unitree_go::msg::SportModeState>::SharedPtr state_sub_;
     rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr cmd_sub_;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr            odom_pub_;
-    rclcpp::Service<acre_ctrl::srv::Go2StartSequence>::SharedPtr     start_sequence_srv_;
+    rclcpp::Service<acre_ctrl_msgs::srv::Go2StartSequence>::SharedPtr     start_sequence_srv_;
     rclcpp::TimerBase::SharedPtr                                     odom_timer_;
 };
 

@@ -2,18 +2,21 @@ cmake_minimum_required(VERSION 3.8)
 project(acre_ctrl)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
+  add_compile_options(-Wall -Wextra -Wpedantic -Werror -Wno-attributes)
 endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
 find_package(unitree_go REQUIRED)
 find_package(unitree_api REQUIRED)
 find_package(nlohmann_json REQUIRED)
+find_package(acre_ctrl_msgs REQUIRED)
 find_package(Python3 REQUIRED COMPONENTS Development Interpreter)
 find_package(pybind11 REQUIRED)
 
@@ -21,16 +24,15 @@ find_package(pybind11 REQUIRED)
 # unitree_ros2_example repo - vendor those under include/ alongside it.
 include_directories(include/acre_ctrl)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/Go2StartSequence.srv"
-)
-
 set(DEPENDENCY_LIST
   rclcpp
   geometry_msgs
   nav_msgs
+  sensor_msgs
+  trajectory_msgs
   unitree_go
   unitree_api
+  acre_ctrl_msgs
 )
 
 add_executable(sportmode_driver
@@ -39,37 +41,22 @@ add_executable(sportmode_driver
 )
 target_compile_features(sportmode_driver PRIVATE cxx_std_20)
 ament_target_dependencies(sportmode_driver ${DEPENDENCY_LIST})
-rosidl_target_interfaces(sportmode_driver ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-add_executable(point_control_node
-  src/ctrl/point_control_node.cpp
+add_executable(control_node
+  src/ctrl/control_node.cpp
   src/common/ros2_sport_client.cpp
 )
-target_compile_features(point_control_node PRIVATE cxx_std_20)
-ament_target_dependencies(point_control_node ${DEPENDENCY_LIST})
-rosidl_target_interfaces(point_control_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
-target_link_libraries(point_control_node pybind11::embed)
-
-# spin_sample is a plugin loaded at runtime (REGISTER_ALGORITHM exposes
-# extern "C" algo_create/algo_destroy/etc for dlopen), not a standalone
-# executable - build it as a shared library.
-add_library(spin_sample SHARED
-  src/algo/spin_sample.cpp
-)
-target_compile_features(spin_sample PRIVATE cxx_std_20)
-ament_target_dependencies(spin_sample ${DEPENDENCY_LIST})
-rosidl_target_interfaces(spin_sample ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_compile_features(control_node PRIVATE cxx_std_20)
+ament_target_dependencies(control_node ${DEPENDENCY_LIST})
+target_link_libraries(control_node pybind11::embed)
 
 install(TARGETS
   sportmode_driver
-  point_control_node
+  control_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(TARGETS
-  spin_sample
-  DESTINATION lib/${PROJECT_NAME}
-)
+ament_python_install_package(${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -78,5 +65,4 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-ament_export_dependencies(rosidl_default_runtime)
 ament_package()
