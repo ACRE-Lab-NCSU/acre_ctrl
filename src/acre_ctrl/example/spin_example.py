@@ -1,5 +1,5 @@
 from acre_ctrl.algorithm import ComponentRegistry, ControlAlgorithm, components
-from geometry_msgs.msg import Twist, Pose
+from geometry_msgs.msg import Twist
 
 @components("odom")
 class MyAlgo(ControlAlgorithm):

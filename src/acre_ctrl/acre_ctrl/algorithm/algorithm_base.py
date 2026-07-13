@@ -12,6 +12,7 @@ from dataclasses import fields as dc_fields
 
 @dataclass
 class ComponentRegistry:
+    dt:             Optional[float]             = None
     pose:           Optional[Pose]              = None
     odom:           Optional[Odometry]          = None
     goal:           Optional[Pose]              = None
@@ -42,9 +43,6 @@ def components(*names: str):
     return decorator
 
 class ControlAlgorithm(ABC):
-    def init(self) -> None:
-        pass
-
     @abstractmethod
     def compute(self, input: ComponentRegistry) -> Twist:
         ...

@@ -21,6 +21,7 @@ namespace py = pybind11;
 namespace fs = std::filesystem;
 
 struct RequiredComponents {
+    bool dt          = false;
     bool pose        = false;
     bool odom        = false;
     bool goal        = false;
@@ -67,6 +68,12 @@ public:
     }
 
     const RequiredComponents& components() const { return required_; }
+
+    void set_dt(const double dt) {
+        if (!required_.dt) return;
+        py::gil_scoped_acquire gil;
+        input_.attr("dt") = dt;
+    }
 
     void set_pose(const geometry_msgs::msg::Pose& pose) {
         if (!required_.pose) return;
@@ -216,7 +223,8 @@ private:
         }
 
         for (const auto& n : names) {
-            if      (n == "pose")        rc.pose = true;   // <-- missing, add this
+            if      (n == "pose")        rc.pose = true;
+            else if (n == "dt")          rc.dt = true;
             else if (n == "odom")        rc.odom = true;
             else if (n == "goal")        rc.goal = true;
             else if (n == "path")        rc.path = true;

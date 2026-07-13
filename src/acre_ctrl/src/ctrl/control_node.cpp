@@ -153,7 +153,9 @@ private:
         // Track dt
         auto now = this->now();
         double dt = (now - last_tick_).seconds();
-        (void)dt; // pass to the algorithm if/when it needs dt
+        if (runner_->components().dt) {
+            runner_->set_dt(dt);
+        }
         last_tick_ = now;
 
         // Run algorithm
