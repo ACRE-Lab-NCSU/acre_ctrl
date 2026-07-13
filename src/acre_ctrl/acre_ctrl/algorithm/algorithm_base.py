@@ -6,7 +6,7 @@ from geometry_msgs.msg import Twist, Pose
 from nav_msgs.msg import Odometry, Path
 from trajectory_msgs.msg import JointTrajectory
 from sensor_msgs.msg import PointCloud2
-from nav_msgs.msg import OccupancyGrid
+from grid_map_msgs.msg import GridMap
 from sensor_msgs.msg import Imu
 from dataclasses import fields as dc_fields
 
@@ -19,7 +19,7 @@ class ComponentRegistry:
     path:           Optional[Path]              = None
     traj:           Optional[JointTrajectory]   = None
     point_cloud:    Optional[PointCloud2]       = None
-    map:            Optional[OccupancyGrid]     = None
+    map:            Optional[GridMap]           = None
     imu:            Optional[Imu]               = None
 
 _VALID_COMPONENTS = frozenset(f.name for f in dc_fields(ComponentRegistry))

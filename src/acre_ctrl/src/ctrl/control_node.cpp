@@ -24,7 +24,7 @@ public:
         this->declare_parameter("algorithm",         "");
         this->declare_parameter("pose_topic",        "/mocap_pose");
         this->declare_parameter("odom_topic",        "/sport_odom");
-        this->declare_parameter("map_topic",         "/map");
+        this->declare_parameter("map_topic",         "/acre_map");
         this->declare_parameter("point_cloud_topic", "/unitree/slam_lidar/points");
         this->declare_parameter("imu_topic",         "/unitree/slam_lidar/imu");
         this->declare_parameter("path_topic",        "/plan");

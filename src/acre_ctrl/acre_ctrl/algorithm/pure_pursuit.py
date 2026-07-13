@@ -37,10 +37,10 @@ class PurePursuit(ControlAlgorithm):
         # Calculate the difference
         dx: float = goal_x - curr_x
         dy: float = goal_y - curr_y
-        ld: float = np.hypot(dx, dy) # Look-ahead distance
+        pos_error: float = np.hypot(dx, dy) # Look-ahead distance
 
         # Check if the goal is reached
-        if ld < self.goal_tolerance:
+        if pos_error < self.goal_tolerance:
             return cmd
         
         target_heading: float = np.arctan2(dy, dx)
@@ -48,8 +48,7 @@ class PurePursuit(ControlAlgorithm):
                                     np.cos(target_heading - theta))
         
         # Apply Control
-        heading_scale = max(0.0, np.cos(norm_diff)) # Slow down as robot approaches goal
-        linear_vel = self.k_linear * ld * heading_scale
+        linear_vel = self.k_linear * pos_error
         angular_vel = self.k_angular * norm_diff
 
         cmd.linear.x = float(np.clip(linear_vel, -self.max_linear, self.max_linear))

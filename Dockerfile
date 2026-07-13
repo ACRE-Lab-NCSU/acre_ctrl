@@ -23,10 +23,37 @@ RUN git clone https://github.com/unitreerobotics/unitree_ros2.git /opt/unitree_r
     . /opt/ros/humble/setup.sh && \
     CC=gcc CXX=g++ colcon build --symlink-install
 
+# Install PCL and ANYbotics Gridmap
+RUN apt-get update && apt-get install -y \
+    ros-humble-pcl-conversions \
+    ros-humble-pcl-ros \
+    libpcl-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /opt/anybotics_ws/src && \
+    cd /opt/anybotics_ws/src && \
+    git clone https://github.com/anybotics/grid_map.git --branch humble && \
+    apt-get update && \
+    rosdep update && \
+    cd /opt/anybotics_ws && \
+    . /opt/ros/humble/setup.sh && \
+    rosdep install -y --ignore-src --from-paths src && \
+    colcon build --symlink-install && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install the Gridmap Python Bindings
+RUN cd /opt/anybotics_ws/src && \
+    git clone https://github.com/ACRE-Lab-NCSU/grid_map_python.git && \
+    cd /opt/anybotics_ws && \
+    . /opt/ros/humble/setup.sh && \
+    . install/setup.sh && \
+    colcon build --symlink-install --packages-select grid_map_python
+
 # Entrypoint
 RUN printf '#!/bin/bash\n\
 source /opt/ros/humble/setup.sh\n\
 source /opt/unitree_ros2/cyclonedds_ws/install/setup.bash\n\
+source /opt/anybotics_ws/install/setup.bash\n\
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp\n\
 exec "$@"\n' > /entrypoint.sh && chmod +x /entrypoint.sh
 
