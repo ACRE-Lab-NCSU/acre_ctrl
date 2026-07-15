@@ -46,13 +46,18 @@ add_executable(control_node
   src/ctrl/control_node.cpp
   src/common/ros2_sport_client.cpp
 )
+
 target_compile_features(control_node PRIVATE cxx_std_20)
 ament_target_dependencies(control_node ${DEPENDENCY_LIST})
 target_link_libraries(control_node pybind11::embed)
 
+add_executable(unitree_topic_bridge src/common/unitree_topic_bridge.cpp)
+ament_target_dependencies(unitree_topic_bridge ${DEPENDENCY_LIST})
+
 install(TARGETS
   sportmode_driver
   control_node
+  unitree_topic_bridge
   DESTINATION lib/${PROJECT_NAME}
 )
 
