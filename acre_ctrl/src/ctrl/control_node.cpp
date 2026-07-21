@@ -5,7 +5,7 @@
 #include "geometry_msgs/msg/twist_stamped.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "nav_msgs/msg/path.hpp"
-#include "nav_msgs/msg/occupancy_grid.hpp"
+#include <grid_map_msgs/msg/grid_map.hpp>
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "sensor_msgs/msg/imu.hpp"
@@ -24,9 +24,9 @@ public:
         this->declare_parameter("algorithm",         "");
         this->declare_parameter("pose_topic",        "/mocap_pose");
         this->declare_parameter("odom_topic",        "/sport_odom");
-        this->declare_parameter("map_topic",         "/acre_map");
-        this->declare_parameter("point_cloud_topic", "/unitree/slam_lidar/points");
-        this->declare_parameter("imu_topic",         "/unitree/slam_lidar/imu");
+        this->declare_parameter("map_topic",         "/acre/sdf_cbf");
+        this->declare_parameter("point_cloud_topic", "/cloud_registered");
+        this->declare_parameter("imu_topic",         "/livox/imu");
         this->declare_parameter("path_topic",        "/plan");
         this->declare_parameter("traj_topic",        "/joint_trajectory");
 
@@ -81,9 +81,9 @@ public:
                 [this](sensor_msgs::msg::PointCloud2::SharedPtr msg) { point_cloud_ = *msg; });
         }
         if (runner_->components().map) {
-            map_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+            map_sub_ = this->create_subscription<grid_map_msgs::msg::GridMap>(
                 map_topic_, 10,
-                [this](nav_msgs::msg::OccupancyGrid::SharedPtr msg) { costmap_ = *msg; });
+                [this](grid_map_msgs::msg::GridMap::SharedPtr msg) { map_ = *msg; });
         }
         if (runner_->components().imu) {
             imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
@@ -147,7 +147,7 @@ private:
         if (path_)        runner_->set_path(*path_);
         if (traj_)        runner_->set_traj(*traj_);
         if (point_cloud_) runner_->set_point_cloud(*point_cloud_);
-        if (costmap_)     runner_->set_map(*costmap_);
+        if (map_)         runner_->set_map(*map_);
         if (imu_)         runner_->set_imu(*imu_);
 
         // Track dt
@@ -189,7 +189,7 @@ private:
     std::optional<nav_msgs::msg::Path>                      path_           = std::nullopt;
     std::optional<trajectory_msgs::msg::JointTrajectory>    traj_           = std::nullopt;
     std::optional<sensor_msgs::msg::PointCloud2>            point_cloud_    = std::nullopt;
-    std::optional<nav_msgs::msg::OccupancyGrid>             costmap_        = std::nullopt;
+    std::optional<grid_map_msgs::msg::GridMap>              map_            = std::nullopt;
     std::optional<sensor_msgs::msg::Imu>                    imu_            = std::nullopt;
     rclcpp::Time last_tick_;
 
@@ -205,7 +205,7 @@ private:
     rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr                    path_sub_;
     rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory>::SharedPtr  traj_sub_;
     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr          point_cloud_sub_;
-    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr           map_sub_;
+    rclcpp::Subscription<grid_map_msgs::msg::GridMap>::SharedPtr            map_sub_;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr                  imu_sub_;
     rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr          twist_pub_;
     rclcpp::Client<acre_ctrl_msgs::srv::Go2StartSequence>::SharedPtr             start_client_;

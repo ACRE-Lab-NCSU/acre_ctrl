@@ -5,7 +5,9 @@
 #include <rclcpp/serialized_message.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <nav_msgs/msg/path.hpp>
-#include <nav_msgs/msg/occupancy_grid.hpp>
+#include <grid_map_msgs/msg/grid_map.hpp>
+#include <grid_map_ros/GridMapRosConverter.hpp>
+#include <grid_map_core/GridMap.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 #include <trajectory_msgs/msg/joint_trajectory.hpp>
@@ -112,10 +114,14 @@ public:
             serialize_msg(pc), "sensor_msgs/msg/PointCloud2");
     }
 
-    void set_map(const nav_msgs::msg::OccupancyGrid& map) {
+    void set_map(const grid_map_msgs::msg::GridMap& msg) {
         if (!required_.map) return;
         py::gil_scoped_acquire gil;
-        input_.attr("map") = to_py(map);
+
+        grid_map::GridMap gm;
+        grid_map::GridMapRosConverter::fromMessage(msg, gm);
+
+        input_.attr("map") = py::cast(gm);   // relies on grid_map_python's type caster being registered
     }
 
     void set_imu(const sensor_msgs::msg::Imu& imu) {
@@ -170,6 +176,7 @@ private:
         py::module_ navm = py::module_::import("nav_msgs.msg");
         py::module_ traj = py::module_::import("trajectory_msgs.msg");
         py::module_ sens = py::module_::import("sensor_msgs.msg");
+        py::module_::import("grid_map_python");
 
         pose_cls_        = geom.attr("Pose");
         quaternion_cls_  = geom.attr("Quaternion");
