@@ -54,12 +54,15 @@ RUN printf '#!/bin/bash\n\
 source /opt/ros/humble/setup.sh\n\
 source /opt/unitree_ros2/cyclonedds_ws/install/setup.bash\n\
 source /opt/anybotics_ws/install/setup.bash\n\
+if [ -d /ros2_ws/src ]; then\n\
+  cd /ros2_ws\n\
+  rosdep install --from-paths src --ignore-src -y || true\n\
+  colcon build --symlink-install\n\
+  source /ros2_ws/install/setup.bash\n\
+fi\n\
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp\n\
 exec "$@"\n' > /entrypoint.sh && chmod +x /entrypoint.sh
 
-COPY . /workspace
-WORKDIR /workspace
-
+WORKDIR /ros2_ws
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["bash"]
-# /ros_ws/src

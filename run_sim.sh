@@ -4,5 +4,5 @@ docker run -it --rm \
     -e XDG_RUNTIME_DIR=/tmp/runtime-root \
     -e "CYCLONEDDS_URI=<CycloneDDS><Domain><General><Interfaces><NetworkInterface name=\"lo\"/></Interfaces></General></Domain></CycloneDDS>" \
     -e ROS_DOMAIN_ID=1 \
-    -v $(pwd):/workspace:z \
+    -v $(pwd):/ros2_ws/src/acre_ctrl:z \
     acre_ctrl
