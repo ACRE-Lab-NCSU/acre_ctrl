@@ -38,16 +38,10 @@ class SdfCbf(ControlAlgorithm):
         return R_inverse @ s_dot
     
     def cbf(self, sdf_map, curr_pos):
-        eps = sdf_map.getResolution()
-        h_center = sdf_map.atPosition("sdf", curr_pos)
-        h_dx = sdf_map.atPosition("sdf", np.array([curr_pos[0] + eps, curr_pos[1]]))
-        h_dy = sdf_map.atPosition("sdf", np.array([curr_pos[0], curr_pos[1] + eps]))
-
-        grad_h = np.array([(h_dx - h_center) / eps, 
-                           (h_dy - h_center) / eps, 
-                                    0
-                            ])
-        return h_center, grad_h
+        h = sdf_map.atPosition("sdf", curr_pos)
+        gx = sdf_map.atPosition("sdf_grad_x", curr_pos)
+        gy = sdf_map.atPosition("sdf_grad_y", curr_pos)
+        return h, np.array([gx, gy, 0])
 
 
     def safety_filter(self, nominal_cmd, h, grad_h, curr_theta):
