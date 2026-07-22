@@ -7,7 +7,7 @@ from scipy.spatial.transform import Rotation as R
 
 
 @components("odom", "goal")
-class PurePursuit(ControlAlgorithm):
+class Pursuit(ControlAlgorithm):
     def __init__(self):
         self.goal_tolerance = 0.05
         self.k_linear = 0.8

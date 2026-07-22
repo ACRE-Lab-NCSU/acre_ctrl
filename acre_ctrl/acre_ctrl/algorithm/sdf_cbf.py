@@ -1,7 +1,6 @@
 from acre_ctrl.algorithm import ComponentRegistry, ControlAlgorithm, components
 from geometry_msgs.msg import Twist, Pose
 from nav_msgs.msg import Odometry
-import grid_map_python as gmp
 
 import numpy as np
 from scipy.spatial.transform import Rotation as R
@@ -10,16 +9,16 @@ from scipy.spatial.transform import Rotation as R
 @components("odom", "goal", "map")
 class SdfCbf(ControlAlgorithm):
     def __init__(self):
-        self.goal_tolerance = 0.05
-        self.l = 0.05 
-        self.alpha = 0.01
-        self.max_linear = 0.4 # m/s
-        self.max_angular = 0.4 # rad/s
+        self.goal_tolerance     = 0.05 # meters
+        self.l                  = 0.05 # meters
+        self.max_linear         = 0.4 # m/s
+        self.max_angular        = 0.4 # rad/s
+        self.alpha              = 0.01
 
     def unicycle_control(self, curr_pos, curr_theta, goal_pos, goal_theta):
-
         # Calculate error
         p_dot = goal_pos - curr_pos
+
         # Check if the goal is reached
         if np.linalg.norm(p_dot) < self.goal_tolerance:
             print("Goal reached")
@@ -67,8 +66,7 @@ class SdfCbf(ControlAlgorithm):
         return nominal_cmd + np.maximum(0, eta) * L_g
 
     def compute(self, input: ComponentRegistry) -> Twist:
-        cmd = Twist()
-
+        # Store inputs
         odom: Odometry = input.odom
         goal: Pose = input.goal
         sdf_map = input.map
@@ -83,7 +81,7 @@ class SdfCbf(ControlAlgorithm):
         gq = goal.orientation
         goal_theta = R.from_quat([gq.x, gq.y, gq.z, gq.w]).as_euler('zyx', degrees=False)[0]
 
-        # Compute a nominal control command
+        # Compute a nominal control command and clamp to limits
         nominal_cmd = self.unicycle_control(curr_pos, curr_theta, goal_pos, goal_theta)
         nominal_cmd = np.array([
             np.clip(nominal_cmd[0], -self.max_linear, self.max_linear),
@@ -96,6 +94,7 @@ class SdfCbf(ControlAlgorithm):
         # Apply safety filter to nominal command
         safe_cmd = self.safety_filter(nominal_cmd, h, grad_h, curr_theta)
 
+        cmd = Twist()
         cmd.linear.x = float(safe_cmd[0])
         cmd.angular.z = float(safe_cmd[1])
         return cmd
