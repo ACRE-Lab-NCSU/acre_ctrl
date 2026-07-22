@@ -1,3 +1,18 @@
+/**
+ *  @file control_node.cpp
+ *  @brief ROS2 Node for running acre_ctrl python algorithms
+ *  @author Nicholas Sutton
+ *  @date 2026-07-22
+ * 
+ *  Copyright 2026 Nicholas Sutton
+ * 
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ */
+
 #include <chrono>
 #include <memory>
 #include <optional>
@@ -15,6 +30,10 @@
 
 #define START_SEQUENCE_SERVICE "go2_start_sequence"
 
+/**
+ *  @class ControlNode
+ *  @brief A Controller node that interacts with the Go2 Sportmode bridge and sensor topics to run acre_ctrl python algorithms
+ */
 class ControlNode : public rclcpp::Node {
 public:
     ControlNode() : Node("point_control_node")
@@ -137,6 +156,10 @@ public:
     }
 
 private:
+
+    /**
+     * @brief Callback that processes sensor data and runs the provided control algorithm
+     */
     void ctrl_callback()
     {
         // Push whatever's been received into the runner's registry.

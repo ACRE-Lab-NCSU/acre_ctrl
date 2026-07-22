@@ -1,3 +1,20 @@
+"""
+Module: robotarium.py
+Author: Nicholas Sutton
+Date: 2026-07-22
+Description: P controller for a Unicycle model system based on the 
+             design presented in (doi: 10.1109/MCS.2019.2949973)
+
+
+Copyright 2026 Nicholas Sutton
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+http://www.apache.org/licenses/LICENSE-2.0
+"""
+
 from acre_ctrl.algorithm import ComponentRegistry, ControlAlgorithm, components
 from geometry_msgs.msg import Twist, Pose
 from nav_msgs.msg import Odometry
@@ -8,13 +25,29 @@ from scipy.spatial.transform import Rotation as R
 
 @components("odom", "goal")
 class Robotarium(ControlAlgorithm):
+    """
+    P controller for a Unicycle model system based on the 
+    design presented in (doi: 10.1109/MCS.2019.2949973)
+    """
     def __init__(self):
+        """
+        Initialize a Robotarium controller object
+        """
         self.goal_tolerance     = 0.05 # meters
         self.l                  = 0.05 # meters
         self.max_linear         = 0.4 # m/s
         self.max_angular        = 0.4 # rad/s
 
     def compute(self, input: ComponentRegistry) -> Twist:
+        """
+        Computes the desired linear and angular velocity based on a goal position
+
+        Args:
+            input: The input components for the control algorithm. In this case odometry and a goal pose
+
+        Returns:
+            The desired linear and angular velocity
+        """
         cmd = Twist()
 
         # Store inputs

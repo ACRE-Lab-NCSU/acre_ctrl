@@ -1,3 +1,18 @@
+"""
+Module: pd.py
+Author: Nicholas Sutton
+Date: 2026-07-22
+Description: PD controller for a Unicycle model system
+
+Copyright 2026 Nicholas Sutton
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+http://www.apache.org/licenses/LICENSE-2.0
+"""
+
 from acre_ctrl.algorithm import ComponentRegistry, ControlAlgorithm, components
 from geometry_msgs.msg import Twist, Pose
 from nav_msgs.msg import Odometry
@@ -8,7 +23,13 @@ from scipy.spatial.transform import Rotation as R
 
 @components("odom", "goal", "dt")
 class PD(ControlAlgorithm):
+    """
+    PD controller for a Unicycle model system
+    """
     def __init__(self):
+        """
+        Initialize a PD controller object
+        """
         self.goal_tolerance = 0.05
         self.goal_theta_tolerance = 0.05
         self.k_p = 0.8
@@ -20,6 +41,15 @@ class PD(ControlAlgorithm):
         self._initialized = False
 
     def compute(self, input: ComponentRegistry) -> Twist:
+        """
+        Computes the desired linear and angular velocity based on a goal position
+
+        Args:
+            input: The input components for the control algorithm. In this case odometry, a goal pose, and dt
+
+        Returns:
+            The desired linear and angular velocity
+        """
         cmd = Twist()
         dt = input.dt
         if dt <= 0.0:

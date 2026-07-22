@@ -1,3 +1,18 @@
+"""
+Module: pursuit.py
+Author: Nicholas Sutton
+Date: 2026-07-22
+Description: Pursuit controller for a Unicycle model system
+
+Copyright 2026 Nicholas Sutton
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+http://www.apache.org/licenses/LICENSE-2.0
+"""
+
 from acre_ctrl.algorithm import ComponentRegistry, ControlAlgorithm, components
 from geometry_msgs.msg import Twist, Pose
 from nav_msgs.msg import Odometry, Path
@@ -8,7 +23,13 @@ from scipy.spatial.transform import Rotation as R
 
 @components("odom", "goal")
 class Pursuit(ControlAlgorithm):
+    """
+    Pursuit controller for a Unicycle model system
+    """
     def __init__(self):
+        """
+        Initialize a Pursuit controller object
+        """
         self.goal_tolerance = 0.05
         self.k_linear = 0.8
         self.k_angular = 2.0
@@ -16,6 +37,15 @@ class Pursuit(ControlAlgorithm):
         self.max_angular = 0.8 # rad/s
     
     def compute(self, input: ComponentRegistry) -> Twist:
+        """
+        Computes the desired linear and angular velocity based on a goal position
+
+        Args:
+            input: The input components for the control algorithm. In this case odometry and a goal pose
+
+        Returns:
+            The desired linear and angular velocity
+        """
         cmd: Twist = Twist()
 
         odom: Odometry  = input.odom

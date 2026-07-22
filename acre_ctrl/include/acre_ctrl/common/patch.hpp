@@ -1,3 +1,7 @@
+/**********************************************************************
+ Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
+***********************************************************************/
+
 #pragma once
 #include <rclcpp/rclcpp.hpp>
 

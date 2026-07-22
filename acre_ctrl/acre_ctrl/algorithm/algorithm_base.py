@@ -1,4 +1,18 @@
-# acre_ctrl/algorithm/algorithm_base.py
+"""
+Module: algorithm_base.py
+Author: Nicholas Sutton
+Date: 2026-07-22
+Description: An abstract interface for Control Algorithms
+
+Copyright 2026 Nicholas Sutton
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+http://www.apache.org/licenses/LICENSE-2.0
+"""
+
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Optional
@@ -12,6 +26,9 @@ from dataclasses import fields as dc_fields
 
 @dataclass
 class ComponentRegistry:
+    """
+    A ComponentRegistry defines all the inputs available to a control algorithm
+    """
     dt:             Optional[float]             = None
     pose:           Optional[Pose]              = None
     odom:           Optional[Odometry]          = None
@@ -43,6 +60,18 @@ def components(*names: str):
     return decorator
 
 class ControlAlgorithm(ABC):
+    """
+    An abstract interface for control algorithms
+    """
     @abstractmethod
     def compute(self, input: ComponentRegistry) -> Twist:
+        """
+        Computes the desired linear and angular velocity
+
+        Args:
+            input: The input components for the control algorithm.
+
+        Returns:
+            The desired linear and angular velocity
+        """
         ...

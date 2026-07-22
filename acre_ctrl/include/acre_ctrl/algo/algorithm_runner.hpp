@@ -1,3 +1,18 @@
+/**
+ *  @file algorithm_runner.cpp
+ *  @brief The Algorithm runner is a bridge between the Python algorithm code and the C++ ROS2 controller node.
+ *  @author Nicholas Sutton
+ *  @date 2026-07-22
+ * 
+ *  Copyright 2026 Nicholas Sutton
+ * 
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ */
+
 #pragma once
 #include <pybind11/embed.h>
 #include <pybind11/stl.h>

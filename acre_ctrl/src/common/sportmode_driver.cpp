@@ -1,3 +1,18 @@
+/**
+ *  @file sportmode_driver.cpp
+ *  @brief ROS2 Node for interfacing with the Unitree SDK
+ *  @author Nicholas Sutton
+ *  @date 2026-07-22
+ * 
+ *  Copyright 2026 Nicholas Sutton
+ * 
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ * 
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ */
+
 #include <chrono>
 #include <cmath>
 #include <memory>
@@ -18,7 +33,10 @@ enum class GaitMode {
     CLASSIC,
 };
 
-
+/**
+ *  @class Go2SportClientNode
+ *  @brief A ROS2 Node that interacts directly with the Unitree SDK
+ */
 class Go2SportClientNode : public rclcpp::Node {
 public:
     Go2SportClientNode()
@@ -115,12 +133,21 @@ public:
     }
 
 private:
+
+    /**
+     * @brief Callback that stores the most recent sportmode state message from the go2
+     * @param msg DDS message containing the sportmode state
+     */
     void sport_state_handler(unitree_go::msg::SportModeState::SharedPtr msg)
     {
         state_         = *msg;
         state_received_ = true;
     }
 
+    /**
+     * @brief Callback that consumes Twist messages and calls the Unitree SDK to move the Go2
+     * @param msg TwistStamped message that contains the desired velocities for the go2
+     */
     void cmd_callback(geometry_msgs::msg::TwistStamped::SharedPtr msg) 
     {
         if (!ctrl_ready_) return;  // ignore commands until startup is complete
@@ -133,6 +160,9 @@ private:
         sport_client_.Move(req, vx, vy, vyaw);
     }
 
+    /**
+     * @brief Callback that repackages the sportmode state message as a standard ROS2 Odom message
+     */
     void publish_odom()
     {
         if (!state_received_) return;
@@ -172,6 +202,9 @@ private:
         odom_pub_->publish(msg);
     }
 
+    /**
+     * @brief Gets the initial state of the Unitree Go2 at Node start
+     */
     void get_init_state()
     {
         auto pos = state_.position;
