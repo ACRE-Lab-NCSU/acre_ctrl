@@ -170,7 +170,7 @@ private:
             .attr("insert")(0, fs::path(path).parent_path().string());
 
         py::module_ pkg = py::module_::import("acre_ctrl.algorithm");
-        cdr_ = py::module_::import("acre_ctrl.algorithm.cdr");
+        cdr_ = py::module_::import("acre_ctrl.common.cdr");
 
         py::module_ geom = py::module_::import("geometry_msgs.msg");
         py::module_ navm = py::module_::import("nav_msgs.msg");

@@ -19,6 +19,8 @@ find_package(nlohmann_json REQUIRED)
 find_package(acre_ctrl_msgs REQUIRED)
 find_package(Python3 REQUIRED COMPONENTS Development Interpreter)
 find_package(pybind11 REQUIRED)
+find_package(grid_map_ros REQUIRED)
+find_package(grid_map_msgs REQUIRED)
 
 # common/ros2_sport_client.hpp pulls in nlohmann/json.hpp and patch.hpp from the
 # unitree_ros2_example repo - vendor those under include/ alongside it.
@@ -33,6 +35,8 @@ set(DEPENDENCY_LIST
   unitree_go
   unitree_api
   acre_ctrl_msgs
+  grid_map_ros
+  grid_map_msgs
 )
 
 add_executable(sportmode_driver

@@ -13,13 +13,17 @@ class SdfCbf(ControlAlgorithm):
         self.goal_tolerance = 0.05
         self.l = 0.05 
         self.alpha = 0.01
-        self.max_linear = 0.8 # m/s
-        self.max_angular = 0.8 # rad/s
+        self.max_linear = 0.4 # m/s
+        self.max_angular = 0.4 # rad/s
 
-    def single_integrator_control(self, curr_pos, curr_theta, goal_pos, goal_theta):
+    def unicycle_control(self, curr_pos, curr_theta, goal_pos, goal_theta):
 
         # Calculate error
         p_dot = goal_pos - curr_pos
+        # Check if the goal is reached
+        if np.linalg.norm(p_dot) < self.goal_tolerance:
+            print("Goal reached")
+
         theta_dot = np.arctan2(np.sin(goal_theta - curr_theta), 
                              np.cos(goal_theta - curr_theta))
         dcm = np.array([-np.sin(curr_theta), np.cos(curr_theta)])
@@ -40,17 +44,28 @@ class SdfCbf(ControlAlgorithm):
         h_dx = sdf_map.atPosition("sdf", np.array([curr_pos[0] + eps, curr_pos[1]]))
         h_dy = sdf_map.atPosition("sdf", np.array([curr_pos[0], curr_pos[1] + eps]))
 
-        grad_h = np.array([(h_dx - h_center) / eps, (h_dy - h_center) / eps])
+        grad_h = np.array([(h_dx - h_center) / eps, 
+                           (h_dy - h_center) / eps, 
+                                    0
+                            ])
         return h_center, grad_h
 
 
     def safety_filter(self, nominal_cmd, h, grad_h, curr_theta):
-        v = nominal_cmd[0]
-        world_vel = np.array([v * np.cos(curr_theta), v * np.sin(curr_theta)])
+        # Take the Lie Derivative of h(x) over the control vector field g(x)
+        g_x = np.array([[np.cos(curr_theta), 0],
+                        [np.sin(curr_theta), 0],
+                        [0,                  1]])
+        L_g = grad_h @ g_x
 
+        # Determine value of eta
+        eta = 0
+        if np.any(L_g):
+            eta = -((L_g @ nominal_cmd) + (self.alpha * h)) / np.sum(L_g**2)
 
+        # For this system the CBF-QP has a closed form solution
+        return nominal_cmd + np.maximum(0, eta) * L_g
 
-    
     def compute(self, input: ComponentRegistry) -> Twist:
         cmd = Twist()
 
@@ -69,7 +84,11 @@ class SdfCbf(ControlAlgorithm):
         goal_theta = R.from_quat([gq.x, gq.y, gq.z, gq.w]).as_euler('zyx', degrees=False)[0]
 
         # Compute a nominal control command
-        nominal_cmd = self.single_integrator_control(curr_pos, curr_theta, goal_pos, goal_theta)
+        nominal_cmd = self.unicycle_control(curr_pos, curr_theta, goal_pos, goal_theta)
+        nominal_cmd = np.array([
+            np.clip(nominal_cmd[0], -self.max_linear, self.max_linear),
+            np.clip(nominal_cmd[1], -self.max_angular, self.max_angular)
+        ])
 
         # Query map for h and compute the gradient at the current position
         h, grad_h = self.cbf(sdf_map, curr_pos)
@@ -77,7 +96,6 @@ class SdfCbf(ControlAlgorithm):
         # Apply safety filter to nominal command
         safe_cmd = self.safety_filter(nominal_cmd, h, grad_h, curr_theta)
 
-        # Clip safe cmd to velocity limits
-        cmd.linear.x = float(np.clip(safe_cmd[0], -self.max_linear, self.max_linear))
-        cmd.angular.z = float(np.clip(safe_cmd[1], -self.max_angular, self.max_angular))
+        cmd.linear.x = float(safe_cmd[0])
+        cmd.angular.z = float(safe_cmd[1])
         return cmd
