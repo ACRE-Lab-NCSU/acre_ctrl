@@ -10,15 +10,32 @@ from scipy import sparse
 
 @components("odom", "goal", "dt")
 class MPC(ControlAlgorithm):
+    """
+    MPC controller for a Unicycle model system
+    """
     def __init__(self):
+        """
+        Initialize a MPC controller object
+        """
         self.goal_tolerance = 0.05
         self.goal_theta_tolerance = 0.05
         self.max_linear = 0.8
         self.max_angular = 0.8
         self.N = 10         
         self._initialized = False
+        self.solver = osqp.OSQP()
 
     def compute(self, input: ComponentRegistry) -> Twist:
+        """
+        Computes the desired linear and angular velocity based on a goal position
+
+        Args:
+            input: The input components for the control algorithm. In this case odometry, a goal pose, and dt
+
+        Returns:
+            The desired linear and angular velocity
+        """
+
         cmd = Twist()
         dt = input.dt
         if dt <= 0.0:
@@ -44,6 +61,7 @@ class MPC(ControlAlgorithm):
         dx = goal_x - curr_x
         dy = goal_y - curr_y
 
+        # Wrapped angle difference
         d_theta = np.arctan2(np.sin(goal_theta - curr_theta), 
                         np.cos(goal_theta - curr_theta))
 
@@ -51,10 +69,10 @@ class MPC(ControlAlgorithm):
         if np.hypot(dx, dy) < self.goal_tolerance and abs(d_theta) < self.goal_theta_tolerance:
             return cmd
 
-        # Rotate world-frame error into robot body frame???
+        theta_ref = curr_theta + d_theta
 
         x0 = np.array([curr_x, curr_y, curr_theta])
-        xr = np.array([goal_x, goal_y, goal_theta])     # reference/goal state
+        xr = np.array([goal_x, goal_y, theta_ref])     # reference/goal state
 
         # Control constraints
         umin = np.array([
@@ -114,8 +132,6 @@ class MPC(ControlAlgorithm):
         # Horizon
         N = self.N
 
-        #  Encoding constraints and input parameters for OSQP
-
         # Quadratic optimization vector
         P = sparse.block_diag([sparse.kron(sparse.eye(N), Q), QN,
                 sparse.kron(sparse.eye(N), R)], format='csc')
@@ -143,9 +159,8 @@ class MPC(ControlAlgorithm):
         u = np.hstack([ueq, uineq])
 
         # Initialize and run OSQP solver
-        prob = osqp.OSQP()
-        prob.setup(P, q, A, l, u, warm_starting=True)
-        res = prob.solve()
+        self.solver.setup(P, q, A, l, u, warm_starting=True)
+        res = self.solver.solve()
 
         if res.info.status != 'solved':
             print(res.info.status)
