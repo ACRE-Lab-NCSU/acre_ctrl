@@ -33,30 +33,54 @@ class MPC(ControlAlgorithm):
         q = odom.pose.pose.orientation
         curr_theta = Rotation.from_quat([q.x, q.y, q.z, q.w]).as_euler('zyx', degrees=False)[0]
 
-        # get goal position and orientation
+        # Goal position and orientation
         goal_x = goal.position.x
         goal_y = goal.position.y
         gq = goal.orientation
         goal_theta = Rotation.from_quat([gq.x, gq.y, gq.z, gq.w]).as_euler('zyx', degrees=False)[0]
 
 
-        # check if we have reached our goal (within tolerance)
+        # Check if we have reached our goal (within tolerance)
         dx = goal_x - curr_x
         dy = goal_y - curr_y
 
         d_theta = np.arctan2(np.sin(goal_theta - curr_theta), 
                         np.cos(goal_theta - curr_theta))
 
-        # return if goal has been reached
+        # Return if goal has been reached
         if np.hypot(dx, dy) < self.goal_tolerance and abs(d_theta) < self.goal_theta_tolerance:
             return cmd
 
         # Rotate world-frame error into robot body frame???
 
         x0 = np.array([curr_x, curr_y, curr_theta])
-        xg = np.array([goal_x, goal_y, goal_theta])
+        xr = np.array([goal_x, goal_y, goal_theta])     # reference/goal state
 
-        # Build A, B 
+        # Control constraints
+        umin = np.array([
+            -self.max_linear, 
+            -self.max_angular
+        ])
+
+        umax = np.array([
+            self.max_linear, 
+            self.max_angular
+        ])
+
+        # State Constraints
+        xmin = np.array([
+            -np.inf,
+            -np.inf,
+            -np.inf
+        ])
+
+        xmax = np.array([
+            np.inf,
+            np.inf,
+            np.inf
+        ])
+
+        # Build A, B for QSOP solver
         cos_t, sin_t = np.cos(curr_theta), np.sin(curr_theta)
 
         v = np.sqrt(
@@ -64,37 +88,76 @@ class MPC(ControlAlgorithm):
             odom.twist.twist.linear.y**2
         )
 
-        A = sparse.csc_matrix([
-            0.0, 0.0, -v*sin_t*dt,
-            0.0, 0.0, v*cos_t*dt,
-            0.0, 0.0, 0.0
+        # Derive A, B matrices
+        Ad = sparse.csc_matrix([
+            [0.0, 0.0, -v*sin_t*dt],
+            [0.0, 0.0, v*cos_t*dt],
+            [0.0, 0.0, 0.0]
         ])
 
-        B = sparse.csc_matrix([
-            cos_t*dt, 0.0,
-            sin_t*dt, 0.0,
-            0.0, 1.0
+        Bd = sparse.csc_matrix([
+            [cos_t*dt, 0.0],
+            [sin_t*dt, 0.0],
+            [0.0, dt]
         ])
 
-        # Build cost penalties Q, R
+        # size of state, control
+        [nx, nu] = Bd.shape
+
+        # Terminal state penalty
         Q = sparse.diags([10.0, 10.0, 2.0])
         QN = Q
 
+        # Control penalty
         R = sparse.diags([0.1, 0.1])
 
+        # Horizon
         N = self.N
 
-        # encoding constraints and input parameters for OSQP
+        #  Encoding constraints and input parameters for OSQP
 
-        # Quadratic optimization
+        # Quadratic optimization vector
         P = sparse.block_diag([sparse.kron(sparse.eye(N), Q), QN,
                 sparse.kron(sparse.eye(N), R)], format='csc')
-
         
-        # Linear optimization
-        q = np.hstack([np.kron(np.ones(N), -Q@xg), -QN@xg, np.zeros(N*nu)])
+        # Linear optimization vector
+        q = np.hstack([np.kron(np.ones(N), -Q@xr), -QN@xr, np.zeros(N*nu)])
 
+        # Linear dynamics
+        Ax = sparse.kron(sparse.eye(N+1),-sparse.eye(nx)) + sparse.kron(sparse.eye(N+1, k=-1), Ad)
+        Bu = sparse.kron(sparse.vstack([sparse.csc_matrix((1, N)), sparse.eye(N)]), Bd)
 
+        # Combine state + control dynamics
+        Aeq = sparse.hstack([Ax, Bu])
+        leq = np.hstack([-x0, np.zeros(N*nx)])
+        ueq = leq
 
+        # State and Control constraints
+        Aineq = sparse.eye((N+1)*nx + N*nu)
+        lineq = np.hstack([np.kron(np.ones(N+1), xmin), np.kron(np.ones(N), umin)])     
+        uineq = np.hstack([np.kron(np.ones(N+1), xmax), np.kron(np.ones(N), umax)])
+
+        # OSQP solver contraints
+        A = sparse.vstack([Aeq, Aineq], format='csc')
+        l = np.hstack([leq, lineq])
+        u = np.hstack([ueq, uineq])
+
+        # Initialize and run OSQP solver
+        prob = osqp.OSQP()
+        prob.setup(P, q, A, l, u, warm_starting=True)
+        res = prob.solve()
+
+        if res.info.status != 'solved':
+            print(res.info.status)
+            return cmd
+        
+        # Apply first control input to Go2
+        ctrl_start = (N+1) * nx
+        ctrl = res.x[ctrl_start: ctrl_start + nu]
+
+        cmd.linear.x = float(np.clip(ctrl[0], -self.max_linear, self.max_linear))
+        cmd.angular.z = float(np.clip(ctrl[1], -self.max_angular, self.max_angular))
+
+        return cmd
 
 
