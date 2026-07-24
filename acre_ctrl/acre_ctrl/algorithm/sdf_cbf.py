@@ -10,31 +10,21 @@ from scipy.spatial.transform import Rotation as R
 class SdfCbf(ControlAlgorithm):
     def __init__(self):
         self.goal_tolerance     = 0.05 # meters
-        self.l                  = 0.05 # meters
-        self.max_linear         = 0.4 # m/s
-        self.max_angular        = 0.4 # rad/s
+        self.l                  = 0.15 # meters
+        self.max_linear         = 0.8 # m/s
+        self.max_angular        = 0.5 # rad/s
         self.alpha              = 0.01
+        self.k_p = 0.5
 
-    def unicycle_control(self, curr_pos, curr_theta, goal_pos, goal_theta):
-        # Calculate error
-        p_dot = goal_pos - curr_pos
+    def unicycle_control(self, curr_pos, curr_theta, goal_pos):
+        s_pos = curr_pos + self.l * np.array([np.cos(curr_theta), np.sin(curr_theta)])
+        s_dot = self.k_p * (goal_pos - s_pos)
 
-        # Check if the goal is reached
-        if np.linalg.norm(p_dot) < self.goal_tolerance:
-            print("Goal reached")
-
-        theta_dot = np.arctan2(np.sin(goal_theta - curr_theta), 
-                             np.cos(goal_theta - curr_theta))
-        dcm = np.array([-np.sin(curr_theta), np.cos(curr_theta)])
-
-        # Store command components
-        s_dot = p_dot + (self.l * theta_dot * dcm)
         R_inverse = np.array([
             [np.cos(curr_theta), np.sin(curr_theta)],
-            [-(1 / self.l) * np.sin(curr_theta), (1 / self.l) * np.cos(curr_theta)]
+            [-(1/self.l) * np.sin(curr_theta), (1/self.l) * np.cos(curr_theta)]
         ])
 
-        # Compute linear and angular velocity
         return R_inverse @ s_dot
     
     def cbf(self, sdf_map, curr_pos):
@@ -72,15 +62,14 @@ class SdfCbf(ControlAlgorithm):
 
         # Store goal pose and orientation
         goal_pos = np.array([goal.position.x, goal.position.y])
-        gq = goal.orientation
-        goal_theta = R.from_quat([gq.x, gq.y, gq.z, gq.w]).as_euler('zyx', degrees=False)[0]
 
-        # Compute a nominal control command and clamp to limits
-        nominal_cmd = self.unicycle_control(curr_pos, curr_theta, goal_pos, goal_theta)
-        nominal_cmd = np.array([
-            np.clip(nominal_cmd[0], -self.max_linear, self.max_linear),
-            np.clip(nominal_cmd[1], -self.max_angular, self.max_angular)
-        ])
+        p_error = goal_pos - curr_pos
+        if np.linalg.norm(p_error) < self.goal_tolerance:
+            print("Goal reached")
+            return Twist()
+
+        # Compute a nominal control command and clamp to vel limits
+        nominal_cmd = self.unicycle_control(curr_pos, curr_theta, goal_pos)
 
         # Query map for h and compute the gradient at the current position
         h, grad_h = self.cbf(sdf_map, curr_pos)

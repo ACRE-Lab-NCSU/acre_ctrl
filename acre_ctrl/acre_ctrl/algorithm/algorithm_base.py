@@ -16,7 +16,7 @@ http://www.apache.org/licenses/LICENSE-2.0
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Optional
-from geometry_msgs.msg import Twist, Pose
+from geometry_msgs.msg import Twist, Pose, PoseStamped
 from nav_msgs.msg import Odometry, Path
 from trajectory_msgs.msg import JointTrajectory
 from sensor_msgs.msg import PointCloud2
@@ -32,7 +32,7 @@ class ComponentRegistry:
     dt:             Optional[float]             = None
     pose:           Optional[Pose]              = None
     odom:           Optional[Odometry]          = None
-    goal:           Optional[Pose]              = None
+    goal:           Optional[PoseStamped]       = None
     path:           Optional[Path]              = None
     traj:           Optional[JointTrajectory]   = None
     point_cloud:    Optional[PointCloud2]       = None

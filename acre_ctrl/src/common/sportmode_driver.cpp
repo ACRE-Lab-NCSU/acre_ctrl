@@ -88,8 +88,8 @@ public:
         RCLCPP_INFO(this->get_logger(), "Controller connected, running startup sequence");
         unitree_api::msg::Request req;
 
-        sport_client_.Damp(req);
-        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        //sport_client_.Damp(req);
+        //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
         sport_client_.StandUp(req);            // damping -> standing lock
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));

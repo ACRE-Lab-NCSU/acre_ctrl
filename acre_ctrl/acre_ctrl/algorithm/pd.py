@@ -65,9 +65,9 @@ class PD(ControlAlgorithm):
         curr_theta = R.from_quat([q.x, q.y, q.z, q.w]).as_euler('zyx', degrees=False)[0]
 
         # get goal position and orientation
-        goal_x = goal.position.x
-        goal_y = goal.position.y
-        gq = goal.orientation
+        goal_x = goal.pose.position.x
+        goal_y = goal.pose.position.y
+        gq = goal.pose.orientation
         goal_theta = R.from_quat([gq.x, gq.y, gq.z, gq.w]).as_euler('zyx', degrees=False)[0]
 
         # Calculate error

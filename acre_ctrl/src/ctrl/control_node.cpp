@@ -80,9 +80,9 @@ public:
                 [this](nav_msgs::msg::Odometry::SharedPtr msg) { odom_ = *msg; });
         }
         if (runner_->components().goal) {
-            goal_sub_ = this->create_subscription<geometry_msgs::msg::Pose>(
-                "goal_pose", 10,
-                [this](geometry_msgs::msg::Pose::SharedPtr msg) { goal_ = *msg; });
+            goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+                "/goal_pose", 10,
+                [this](geometry_msgs::msg::PoseStamped::SharedPtr msg) { goal_ = *msg; });
         }
         if (runner_->components().path) {
             path_sub_ = this->create_subscription<nav_msgs::msg::Path>(
@@ -208,7 +208,7 @@ private:
     // State
     std::optional<geometry_msgs::msg::Pose>                 pose_           = std::nullopt;
     std::optional<nav_msgs::msg::Odometry>                  odom_           = std::nullopt;
-    std::optional<geometry_msgs::msg::Pose>                 goal_           = std::nullopt;
+    std::optional<geometry_msgs::msg::PoseStamped>          goal_           = std::nullopt;
     std::optional<nav_msgs::msg::Path>                      path_           = std::nullopt;
     std::optional<trajectory_msgs::msg::JointTrajectory>    traj_           = std::nullopt;
     std::optional<sensor_msgs::msg::PointCloud2>            point_cloud_    = std::nullopt;
@@ -224,7 +224,7 @@ private:
 
     rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr               pose_sub_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr                odom_sub_;
-    rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr               goal_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr        goal_sub_;
     rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr                    path_sub_;
     rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory>::SharedPtr  traj_sub_;
     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr          point_cloud_sub_;

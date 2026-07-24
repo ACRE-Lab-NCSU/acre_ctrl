@@ -51,6 +51,9 @@ class Pursuit(ControlAlgorithm):
         odom: Odometry  = input.odom
         goal: Pose = input.goal
 
+        if odom is None or goal is None:
+            return cmd
+
         # Store current point
         curr_x: float = odom.pose.pose.position.x
         curr_y: float = odom.pose.pose.position.y
@@ -61,8 +64,8 @@ class Pursuit(ControlAlgorithm):
         theta = r.as_euler('zyx', degrees=False)[0]
 
         # Store goal
-        goal_x: float = goal.position.x
-        goal_y: float = goal.position.y
+        goal_x: float = goal.pose.position.x
+        goal_y: float = goal.pose.position.y
 
         # Calculate the difference
         dx: float = goal_x - curr_x

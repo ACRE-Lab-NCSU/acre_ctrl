@@ -104,7 +104,7 @@ public:
         input_.attr("odom") = to_py(odom);
     }
 
-    void set_goal(const geometry_msgs::msg::Pose& goal) {
+    void set_goal(const geometry_msgs::msg::PoseStamped& goal) {
         if (!required_.goal) return;
         py::gil_scoped_acquire gil;
         input_.attr("goal") = to_py(goal);
