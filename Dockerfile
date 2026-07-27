@@ -38,7 +38,7 @@ RUN mkdir -p /opt/anybotics_ws/src && \
     cd /opt/anybotics_ws && \
     . /opt/ros/humble/setup.sh && \
     rosdep install -y --ignore-src --from-paths src && \
-    colcon build --symlink-install && \
+    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release && \
     rm -rf /var/lib/apt/lists/*
 
 # Install the Gridmap Python Bindings
@@ -48,6 +48,9 @@ RUN cd /opt/anybotics_ws/src && \
     . /opt/ros/humble/setup.sh && \
     . install/setup.sh && \
     colcon build --symlink-install --packages-select grid_map_python
+
+# Pip installs
+RUN pip install osqp
 
 # Entrypoint
 RUN printf '#!/bin/bash\n\
