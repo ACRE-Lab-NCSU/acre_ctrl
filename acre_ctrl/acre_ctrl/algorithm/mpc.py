@@ -32,11 +32,11 @@ class MPC(ControlAlgorithm):
         """
         Initialize a MPC controller object
         """
-        self.goal_tolerance = 0.05
+        self.goal_tolerance = 0.15                   # increased linear tolerance
         self.goal_theta_tolerance = 0.05
         self.max_linear = 0.8
         self.max_angular = 0.8
-        self.N = 10         
+        self.N = 25                                  # larger time horizon         
         self._initialized = False
         self.solver = osqp.OSQP()
 
@@ -83,12 +83,14 @@ class MPC(ControlAlgorithm):
         d_theta = np.arctan2(np.sin(goal_theta - curr_theta), 
                         np.cos(goal_theta - curr_theta))
 
+        dist = np.hypot(dx, dy)
+        print(f"Distance to goal: {dist:.3f}")
+
         # Return if goal has been reached
-        if np.hypot(dx, dy) < self.goal_tolerance:
+        if dist < self.goal_tolerance:
             print("Goal Reached")
             return cmd
-
-        # LOOK INTO THIS
+        
         theta_ref = curr_theta + d_theta
 
         x0 = np.array([curr_x, curr_y, curr_theta])
@@ -128,9 +130,9 @@ class MPC(ControlAlgorithm):
 
         # Derive A, B matrices
         Ad = sparse.csc_matrix([
-            [0.0, 0.0, -v*sin_t*dt],
-            [0.0, 0.0, v*cos_t*dt],
-            [0.0, 0.0, 0.0]
+            [1.0, 0.0, -v*sin_t*dt],
+            [0.0, 1.0, v*cos_t*dt],
+            [0.0, 0.0, 1.0]
         ])
 
         Bd = sparse.csc_matrix([
@@ -144,10 +146,10 @@ class MPC(ControlAlgorithm):
 
         # Terminal state penalty
         Q = sparse.diags([10.0, 10.0, 2.0])
-        QN = Q
+        QN = sparse.diags([50.0, 50.0, 10.0])
 
         # Control penalty
-        R = sparse.diags([0.5, 0.5])
+        R = sparse.diags([1.0, 0.5])
 
         # Horizon
         N = self.N
