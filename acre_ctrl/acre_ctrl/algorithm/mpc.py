@@ -1,5 +1,20 @@
+"""
+Module: mpc.py
+Author: Akshay Pradhan
+Date: 2026-07-22
+Description: PD controller for a Unicycle model system
+
+Copyright 2026 Akshay Pradhan
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+http://www.apache.org/licenses/LICENSE-2.0
+"""
+
 from acre_ctrl.algorithm import ComponentRegistry, ControlAlgorithm, components
-from geometry_msgs.msg import Twist, Pose
+from geometry_msgs.msg import Twist, PoseStamped
 from nav_msgs.msg import Odometry
 
 import osqp
@@ -42,7 +57,7 @@ class MPC(ControlAlgorithm):
             return cmd
 
         odom: Odometry = input.odom
-        goal: Pose = input.goal
+        goal: PoseStamped = input.goal
 
         # Get current position and orientation
         curr_x = odom.pose.pose.position.x
@@ -51,9 +66,9 @@ class MPC(ControlAlgorithm):
         curr_theta = Rotation.from_quat([q.x, q.y, q.z, q.w]).as_euler('zyx', degrees=False)[0]
 
         # Goal position and orientation
-        goal_x = goal.position.x
-        goal_y = goal.position.y
-        gq = goal.orientation
+        goal_x = goal.pose.position.x
+        goal_y = goal.pose.position.y
+        gq = goal.pose.orientation
         goal_theta = Rotation.from_quat([gq.x, gq.y, gq.z, gq.w]).as_euler('zyx', degrees=False)[0]
 
 
@@ -69,6 +84,7 @@ class MPC(ControlAlgorithm):
         if np.hypot(dx, dy) < self.goal_tolerance and abs(d_theta) < self.goal_theta_tolerance:
             return cmd
 
+        # LOOK INTO THIS
         theta_ref = curr_theta + d_theta
 
         x0 = np.array([curr_x, curr_y, curr_theta])
