@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     gpg \
     python3-dev \
+    python3-pip \
     python3-colcon-common-extensions \
     cmake \
     build-essential \
@@ -50,7 +51,7 @@ RUN cd /opt/anybotics_ws/src && \
     colcon build --symlink-install --packages-select grid_map_python
 
 # Pip installs
-RUN pip install osqp
+RUN pip3 install osqp
 
 # Entrypoint
 RUN printf '#!/bin/bash\n\

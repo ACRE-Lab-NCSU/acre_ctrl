@@ -59,6 +59,9 @@ class MPC(ControlAlgorithm):
         odom: Odometry = input.odom
         goal: PoseStamped = input.goal
 
+        if odom is None or goal is None:
+            return cmd
+
         # Get current position and orientation
         curr_x = odom.pose.pose.position.x
         curr_y = odom.pose.pose.position.y
@@ -81,7 +84,8 @@ class MPC(ControlAlgorithm):
                         np.cos(goal_theta - curr_theta))
 
         # Return if goal has been reached
-        if np.hypot(dx, dy) < self.goal_tolerance and abs(d_theta) < self.goal_theta_tolerance:
+        if np.hypot(dx, dy) < self.goal_tolerance:
+            print("Goal Reached")
             return cmd
 
         # LOOK INTO THIS
@@ -143,7 +147,7 @@ class MPC(ControlAlgorithm):
         QN = Q
 
         # Control penalty
-        R = sparse.diags([0.1, 0.1])
+        R = sparse.diags([0.5, 0.5])
 
         # Horizon
         N = self.N
@@ -175,7 +179,7 @@ class MPC(ControlAlgorithm):
         u = np.hstack([ueq, uineq])
 
         # Initialize and run OSQP solver
-        self.solver.setup(P, q, A, l, u, warm_starting=True)
+        self.solver.setup(P, q, A, l, u, warm_starting=True,  verbose=False)
         res = self.solver.solve()
 
         if res.info.status != 'solved':

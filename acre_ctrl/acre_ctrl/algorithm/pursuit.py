@@ -33,8 +33,8 @@ class Pursuit(ControlAlgorithm):
         self.goal_tolerance = 0.05
         self.k_linear = 0.8
         self.k_angular = 2.0
-        self.max_linear = 0.8 # m/s
-        self.max_angular = 0.8 # rad/s
+        self.max_linear = 0.4 # m/s
+        self.max_angular = 0.4 # rad/s
     
     def compute(self, input: ComponentRegistry) -> Twist:
         """
@@ -74,6 +74,7 @@ class Pursuit(ControlAlgorithm):
 
         # Check if the goal is reached
         if pos_error < self.goal_tolerance:
+            print("Goal Reached")
             return cmd
         
         target_heading: float = np.arctan2(dy, dx)

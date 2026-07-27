@@ -39,7 +39,7 @@ public:
     ControlNode() : Node("point_control_node")
     {
         // Declare parameters
-        this->declare_parameter("frequency",         10.0);
+        this->declare_parameter("frequency",         50.0);
         this->declare_parameter("algorithm",         "");
         this->declare_parameter("pose_topic",        "/mocap_pose");
         this->declare_parameter("odom_topic",        "/sport_odom");
